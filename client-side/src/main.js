@@ -1,6 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
-import router from "./routes/router";
+import router from "./routes/_router";
 import store from "./stores/store";
 import "@babel/polyfill";
 import "./plugins/vuetify";
