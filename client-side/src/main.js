@@ -4,7 +4,6 @@ import router from "./routes/_router";
 import store from "./stores/store";
 import "@babel/polyfill";
 import "./plugins/vuetify";
-import "./plugins/axios";
 import "./plugins/registerServiceWorker";
 
 Vue.config.productionTip = false;
