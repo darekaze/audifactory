@@ -11,8 +11,6 @@
     "lint": "eslint **/*.js"
   },
   "dependencies": {
-    "@types/joi": "^13.6.1",
-    "@types/sequelize": "^4.27.28",
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
     "express": "^4.16.4",
@@ -24,7 +22,9 @@
   "devDependencies": {
     "@types/cors": "^2.8.4",
     "@types/express": "^4.16.0",
+    "@types/joi": "^13.6.1",
     "@types/morgan": "^1.7.35",
+    "@types/sequelize": "^4.27.28",
     "eslint": "^5.7.0",
     "nodemon": "^1.18.4"
   }
