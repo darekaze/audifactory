@@ -1,4 +1,4 @@
-import Api from "@/plugins/axios";
+import Api from "./_api";
 
 export default {
   register(credentials) {

@@ -11,7 +11,7 @@ app.use(cors()); // dev only
 
 
 
-app.post("/reg", (req, res) => {
+app.post("/register", (req, res) => {
     res.send({
         message: `Hello ${req.body.email}! Your user was registered!`
     });

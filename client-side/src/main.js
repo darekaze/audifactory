@@ -1,7 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./routes/_router";
-import store from "./stores/store";
+import store from "./stores/_store";
 import "@babel/polyfill";
 import "./plugins/vuetify";
 import "./plugins/registerServiceWorker";
