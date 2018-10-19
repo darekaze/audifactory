@@ -11,10 +11,15 @@
     "lint": "eslint **/*.js"
   },
   "dependencies": {
+    "@types/joi": "^13.6.1",
+    "@types/sequelize": "^4.27.28",
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
     "express": "^4.16.4",
-    "morgan": "^1.9.1"
+    "joi": "^14.0.0",
+    "morgan": "^1.9.1",
+    "sequelize": "^4.40.0",
+    "sqlite3": "^4.0.2"
   },
   "devDependencies": {
     "@types/cors": "^2.8.4",
