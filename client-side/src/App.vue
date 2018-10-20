@@ -1,71 +1,33 @@
 <template>
-  <v-app light>
-    <v-navigation-drawer
-      persistent
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      v-model="drawer"
-      enable-resize-watcher
-      fixed
-      app
-    >
-      <v-list>
-        <v-list-tile
-          value="true"
-          v-for="(item, i) in items"
-          :key="i"
-        >
-          <v-list-tile-action>
-            <v-icon v-html="item.icon"></v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title v-text="item.title"></v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
-    </v-navigation-drawer>
-
-    <v-toolbar
-      app
-      :clipped-left="clipped"
-    >
-      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title v-text="title"></v-toolbar-title>
-      <v-btn icon @click.stop="fixed = !fixed">
-        <v-icon>mdi-minus</v-icon>
-      </v-btn>
+  <v-app>
+    <v-toolbar app>
+      <v-toolbar-title class="headline text-uppercase">
+        <span class="font-weight-light">ALMS</span>
+      </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat to="/about">About</v-btn>
-        <v-btn flat to="/">LOL</v-btn>
-      </v-toolbar-items>
+      <v-btn flat to="/register">
+        <span class="mr-2">Register</span>
+        <v-icon>watch</v-icon>
+      </v-btn>
     </v-toolbar>
-
     <v-content>
       <router-view/>
     </v-content>
-
-    <v-footer :fixed="fixed" app>
-      <span> &copy; 2018</span>
-    </v-footer>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld"
+import HelloWorld from './components/HelloWorld.vue';
 
 export default {
-  name: "App",
-  data () {
+  name: 'App',
+  components: {
+    HelloWorld,
+  },
+  data() {
     return {
-      drawer: false,
-      fixed: false,
-      items: [{
-        icon: "mdi-chart-bubble",
-        title: "Inspire"
-      }],
-      title: "Little Muse"
-    }
-  }
+      //
+    };
+  },
 };
 </script>
