@@ -11,10 +11,13 @@
     "lint": "eslint **/*.js"
   },
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bluebird": "^3.5.2",
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
     "express": "^4.16.4",
     "joi": "^14.0.0",
+    "jsonwebtoken": "^8.3.0",
     "morgan": "^1.9.1",
     "sequelize": "^4.40.0",
     "sqlite3": "^4.0.2"
@@ -26,6 +29,8 @@
     "@types/morgan": "^1.7.35",
     "@types/sequelize": "^4.27.28",
     "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "nodemon": "^1.18.4"
   }
 }
