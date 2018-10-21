@@ -47,10 +47,12 @@ export default {
   methods: {
     async register() {
       try {
-        await AuthService.register({
+        const response = await AuthService.register({
           email: this.email,
           password: this.password,
         });
+        this.$store.dispatch('setToken', response.data.token);
+        this.$store.dispatch('setUser', response.data.user);
       } catch (error) {
         this.error = error.response.data.error;
       }
