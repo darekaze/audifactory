@@ -8,7 +8,7 @@
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon --exec \"npm run lint && npm run start\"",
-    "lint": "eslint **/*.js"
+    "lint": "eslint \"**/*.js\""
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
