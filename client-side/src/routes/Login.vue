@@ -1,10 +1,19 @@
 <template>
 <v-layout align-center justify-center>
-  <v-flex xs12 sm8 md4>
-    <v-card class="elevation-12">
-      <v-toolbar dark color="primary">
-        <v-toolbar-title>Login</v-toolbar-title>
-      </v-toolbar>
+  <v-flex xs11 sm7 md6 lg5 xl4>
+    <v-card class="elevation-4">
+      <v-card-media
+        height="120px"
+        src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+      >
+        <v-container fill-height fluid>
+          <v-layout>
+            <v-flex xs12 align-end d-flex>
+              <span class="headline white--text">Sign in</span>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-card-media>
       <v-card-text>
         <div class="error" v-html="error" />
         <v-form>
@@ -25,6 +34,9 @@
         </v-form>
       </v-card-text>
       <v-card-actions>
+        <router-link class="link" to="/register">
+          Need an account?
+        </router-link>
         <v-spacer></v-spacer>
         <v-btn color="primary" @click="login">Login</v-btn>
       </v-card-actions>
@@ -62,6 +74,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.link {
+  font-size: 1.1em;
+  padding-left: 15px;
+  text-decoration: none;
+}
 .error {
   color: white;
   border-radius: 4px;
