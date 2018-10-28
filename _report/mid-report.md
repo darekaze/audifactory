@@ -5,13 +5,15 @@ JAHJA Darwin, 16094501d | TANTON Reynold Nathaniel, 16094402d
 CHENG Yiran, 16098521d | Wang Tsunying, 18078956d
 
 ---
-## Company Background (WiP)
+## Company Background
 
 Name: **Audifactory**
 
-Audifactory was founded in September 2016 as a startup under the PolyU E-business union. Few years before, the headmaster of Audifactory had discovered that the music market is now undergoing a trend of globalization, resulting an inflation of overall demand of the market and other supplementary markets. Along with this business opportunity, Audifactory had initiated several conferences with world’s leading album production company such as Sony and RIAA, and successfully signed a long-lasting contract on business cooperation. (I think you need to be specific to the types of the market, e.g J-Pop only or )This year, Audifactory had initiated a three-month plan on web application design and development to bring an online shopping website for the client, interconnecting with several album production companies.
+Audifactory was founded in September 2016 as a startup under the PolyU E-business union. Few years ago, the headmaster of Audifactory, Mr. Frank, was able to discover the music markets are now undergoing a trend of globalization. The markets, especially pop music market, has thus experienced an inflation of overall demand of the market and other supplementary markets. Along with these opportunities, Frank therefore had started an offline album business shop in Hong Kong targeting the local customers.
 
-Now, Audifactory had received the world’s best seller award and other 11 relevant business awards. (No need too much, don’t be too exaggerate). These achievements project the degree of successfulness of the company and dedication of Audifactory in providing the friendly album purchase experience to its clients in every minor aspects of the websites.
+In mid 2018, while Frank's album business had gained a huge success. He had further realized that there is a soaring growth of internet usage, resulting a change of purchasing behavior from purchasing in traditional stores to online shopping. To maximize the profits of the business, Frank hence decided to follow the current trend by expanding his business online by building an online B2C shop.
+
+Immediately, on September 2018, Audifactory initiates a seasonal plan on building a fully functional web application by recruiting several web developers. By the end of year, Audifactory will be able to provide their business online, and bring clients a satisfactory online shopping experience along with functions of real time searching engine, album previews, and the post delivery service once the purchases are settled.
 
 ## Expected Contribution List
 
