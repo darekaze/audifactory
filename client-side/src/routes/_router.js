@@ -28,6 +28,12 @@ export default new Router({
       component: () =>
         import(/* webpackChunkName: "register" */ './Login.vue'),
     },
+    {
+      path: '/albums',
+      name: 'albums',
+      component: () =>
+        import(/* webpackChunkName: "register" */ './Albums.vue'),
+    },
   ],
 });
 
