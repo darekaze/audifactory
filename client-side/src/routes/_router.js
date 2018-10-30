@@ -26,13 +26,19 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: () =>
-        import(/* webpackChunkName: "register" */ './Login.vue'),
+        import(/* webpackChunkName: "login" */ './Login.vue'),
     },
     {
       path: '/albums',
       name: 'albums',
       component: () =>
-        import(/* webpackChunkName: "register" */ './Albums.vue'),
+        import(/* webpackChunkName: "albums" */ './Albums.vue'),
+    },
+    {
+      path: '/albums/add', /* should protect this path */
+      name: 'albums-add',
+      component: () =>
+        import(/* webpackChunkName: "albums-add" */ './admin/AddAlbum.vue'),
     },
   ],
 });

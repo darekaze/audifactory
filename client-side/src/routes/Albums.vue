@@ -6,7 +6,7 @@
           {{album.title}}
           {{album.artist}}
           {{album.stocks}}
-          $ {{album.price}}
+          {{album.loves}}
         </div>
       </panel>
     </v-flex>
@@ -29,9 +29,7 @@ export default {
     };
   },
   async mounted() {
-    // request all songs
     this.albums = (await AlbumsService.index()).data;
-    console.log('songs', this.albums);
   },
 };
 </script>
