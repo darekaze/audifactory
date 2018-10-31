@@ -1,12 +1,43 @@
 <template>
-  <v-layout column>
+  <v-layout justify-center>
     <v-flex xs6>
       <panel title="Albums">
-        <div v-for="album in albums" :key="album.id">
-          {{album.title}}
-          {{album.artist}}
-          {{album.stocks}}
-          {{album.loves}}
+        <div
+        v-for="album in albums"
+        :key="album.id"
+        class="album">
+          <v-layout>
+            <v-flex xs6>
+              <div class="a-title">
+                {{album.title}}
+              </div>
+              <div class="a-artist">
+                {{album.artist}}
+              </div>
+              <div class="a-genre">
+                {{album.genre}}
+              </div>
+              <div class="a-stocks">
+                {{album.stocks}}
+              </div>
+              <div class="a-loves">
+                {{album.loves}}
+              </div>
+              <v-btn
+                color="primary"
+                @click="navTo({
+                  name: 'album',
+                  params: {
+                    albumId: album.id,
+                  },
+                })">
+                View
+              </v-btn>
+            </v-flex>
+            <v-flex xs6>
+              <img :src="album.image" alt="No Image.." class="a-image" />
+            </v-flex>
+          </v-layout>
         </div>
       </panel>
     </v-flex>
@@ -33,3 +64,24 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.album {
+  padding: 20px;
+  height: 330px;
+  overflow: hidden;
+}
+.a-title {
+  font-size: 30px;
+}
+.a-artist {
+  font-size: 24px;
+}
+.a-genre {
+  font-size: 18px;
+}
+.a-image {
+  width: 95%;
+  margin: 0 auto;
+}
+</style>
