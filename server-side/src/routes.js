@@ -14,6 +14,9 @@ module.exports = (app) => {
   app.get('/albums',
     AlbumsController.index);
 
+  app.get('/albums/:albumId',
+    AlbumsController.show);
+
   app.post('/albums',
     AlbumsController.post);
 };
