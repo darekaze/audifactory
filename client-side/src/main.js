@@ -6,9 +6,9 @@ import router from './routes/_router';
 import store from './stores/_store';
 import './registerServiceWorker';
 import './plugins/vuetify';
+import './plugins/vueMediaEmbed';
 
 Vue.config.productionTip = false;
-
 sync(store, router);
 
 new Vue({
