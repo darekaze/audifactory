@@ -2,7 +2,7 @@
 <v-layout align-center justify-center>
   <v-flex xs11 sm7 md6 lg5 xl4>
     <v-card class="elevation-4">
-      <v-card-media
+      <v-img
         height="120px"
         src="https://cdn.vuetifyjs.com/images/cards/plane.jpg"
       >
@@ -13,7 +13,7 @@
             </v-flex>
           </v-layout>
         </v-container>
-      </v-card-media>
+      </v-img>
       <v-card-text>
         <div class="error" v-html="error" />
         <v-form>

@@ -1,6 +1,7 @@
 <template>
   <v-layout justify-center>
     <v-flex xs6>
+      <!-- Design will be changed in the future -->
       <panel title="Albums">
         <div
         v-for="album in albums"
@@ -25,12 +26,12 @@
               </div>
               <v-btn
                 color="primary"
-                @click="navTo({
+                :to="{
                   name: 'album',
                   params: {
                     albumId: album.id,
                   },
-                })">
+                }">
                 View
               </v-btn>
             </v-flex>
@@ -45,7 +46,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import AlbumsService from '@/services/Albums';
 import Panel from '@/components/Panel.vue';
 

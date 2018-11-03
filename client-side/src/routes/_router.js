@@ -20,19 +20,25 @@ export default new Router({
       path: '/register',
       name: 'register',
       component: () =>
-        import(/* webpackChunkName: "register" */ './Register.vue'),
+        import(/* webpackChunkName: "auth" */ './Register.vue'),
     },
     {
       path: '/login',
       name: 'login',
       component: () =>
-        import(/* webpackChunkName: "login" */ './Login.vue'),
+        import(/* webpackChunkName: "auth" */ './Login.vue'),
     },
     {
       path: '/albums',
       name: 'albums',
       component: () =>
         import(/* webpackChunkName: "albums" */ './Albums.vue'),
+    },
+    {
+      path: '/albums/:albumId',
+      name: 'album',
+      component: () =>
+        import(/* webpackChunkName: "albums" */ './ViewAlbum.vue'),
     },
     {
       path: '/albums/add', /* should protect this path */
