@@ -14,7 +14,8 @@ export default new Router({
     {
       path: '/about',
       name: 'about',
-      component: () => import(/* webpackChunkName: "about" */ './About.vue'),
+      component: () =>
+        import(/* webpackChunkName: "about" */ './About.vue'),
     },
     {
       path: '/register',
@@ -41,10 +42,16 @@ export default new Router({
         import(/* webpackChunkName: "albums" */ './ViewAlbum.vue'),
     },
     {
-      path: '/albums/add', /* should protect this path */
+      path: '/albums/add', /* should protect this route */
       name: 'albums-add',
       component: () =>
-        import(/* webpackChunkName: "albums-add" */ './admin/AddAlbum.vue'),
+        import(/* webpackChunkName: "albums-mod" */ './admin/AddAlbum.vue'),
+    },
+    {
+      path: '/albums/:albumId/edit', /* should protect this route */
+      name: 'album-edit',
+      component: () =>
+        import(/* webpackChunkName: "albums-mod" */ './admin/EditAlbum.vue'),
     },
   ],
 });

@@ -19,7 +19,7 @@ module.exports = {
       res.send(album);
     } catch (err) {
       res.status(500).send({
-        error: 'Error in fetching album',
+        error: 'Error in showing album',
       });
     }
   },
@@ -30,6 +30,20 @@ module.exports = {
     } catch (err) {
       res.status(500).send({
         error: 'Error in adding the album',
+      });
+    }
+  },
+  async put(req, res) {
+    try {
+      await Album.update(req.body, {
+        where: {
+          id: req.params.albumId,
+        },
+      });
+      res.send({ updated: true });
+    } catch (err) {
+      res.status(500).send({
+        error: 'Error in updating the album',
       });
     }
   },

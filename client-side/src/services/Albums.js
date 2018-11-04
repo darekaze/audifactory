@@ -10,4 +10,7 @@ export default {
   post(album) {
     return Api().post('albums', album);
   },
+  put(album) {
+    return Api().put(`albums/${album.id}`, album);
+  },
 };
