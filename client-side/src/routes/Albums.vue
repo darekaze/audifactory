@@ -36,7 +36,7 @@
               </v-btn>
             </v-flex>
             <v-flex xs6>
-              <img :src="album.image" alt="No Image.." class="a-image" />
+              <img :src="album.imageUrl" alt="No Image.." class="a-image" />
             </v-flex>
           </v-layout>
         </div>

@@ -2,8 +2,7 @@
 <div id="album-details">
   <v-layout>
     <v-flex xs6>
-      <!-- TODO: debug pic -->
-      <img :src="album.imageUrl" alt="No Image.." class="a-image" />
+      <img :src="album.imageUrl" alt="" class="a-image" />
     </v-flex>
     <v-flex xs6>
       <div class="a-title">
@@ -22,7 +21,9 @@
         {{album.loves}}
       </div>
         Highlight Track Preview
-        <vue-media-embed source="soundcloud://517866546" showUser="1" />
+        <div v-if="scLink">
+          <vue-media-embed :source="scLink" showUser="1" />
+        </div>
     </v-flex>
     <!-- TODO: Use v-list to show song tracks -->
     <!-- TODO: Add embed soundcloud player (as a separated component) -->
@@ -37,12 +38,14 @@ export default {
   data() {
     return {
       album: {},
+      scLink: '',
     };
   },
   async mounted() {
     // eslint-disable-next-line
     const albumId = this.$store.state.route.params.albumId;
     this.album = (await AlbumsService.show(albumId)).data;
+    this.scLink = `soundcloud://${this.album.soundCloudId}`;
   },
 };
 </script>
