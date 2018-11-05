@@ -48,13 +48,13 @@
     <panel title="Album details" class="ml-2">
       <v-text-field
         label="List of Songs"
-        v-model="songs"
+        v-model="album.songs"
         prepend-icon="playlist_play"
         multi-line
       ></v-text-field>
       <v-text-field
         label="Description"
-        v-model="description"
+        v-model="album.description"
         prepend-icon="description"
         multi-line
       ></v-text-field>
