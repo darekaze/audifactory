@@ -27,7 +27,7 @@
           <v-text-field
             v-model="email"
             prepend-icon="email"
-            type="text"
+            type="email"
             label="Email"
             required
           ></v-text-field>
