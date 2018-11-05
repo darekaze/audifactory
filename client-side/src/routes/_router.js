@@ -13,12 +13,6 @@ export default new Router({
       component: Home,
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () =>
-        import(/* webpackChunkName: "about" */ './About.vue'),
-    },
-    {
       path: '/register',
       name: 'register',
       component: () =>
@@ -53,6 +47,17 @@ export default new Router({
       name: 'album-edit',
       component: () =>
         import(/* webpackChunkName: "albums-mod" */ './admin/EditAlbum.vue'),
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: () =>
+        import(/* webpackChunkName: "about" */ './About.vue'),
+    },
+    {
+      path: '*',
+      redirect: '/',
+      // TODO: Add 404 page
     },
   ],
 });
