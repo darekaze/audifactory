@@ -1,11 +1,28 @@
+const { Op } = require('sequelize');
 const { Album } = require('../models');
 
 module.exports = {
   async index(req, res) {
     try {
-      const albums = await Album.findAll({
-        limit: 10,
-      });
+      let albums = null;
+      const { search } = req.query;
+      if (search) {
+        albums = await Album.findAll({
+          where: {
+            [Op.or]: [
+              'title', 'artist', 'genre',
+            ].map(key => ({
+              [key]: {
+                [Op.like]: `%${search}%`,
+              },
+            })),
+          },
+        });
+      } else {
+        albums = await Album.findAll({
+          limit: 10,
+        });
+      }
       res.send(albums);
     } catch (err) {
       res.status(500).send({
