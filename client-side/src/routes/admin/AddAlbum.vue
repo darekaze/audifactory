@@ -46,18 +46,16 @@
   </v-flex>
   <v-flex xs7>
     <panel title="Album details" class="ml-2">
-      <v-text-field
+      <v-textarea
         label="List of Songs"
-        v-model="songs"
+        v-model="album.songs"
         prepend-icon="playlist_play"
-        multi-line
-      ></v-text-field>
-      <v-text-field
+      ></v-textarea>
+      <v-textarea
         label="Description"
-        v-model="description"
+        v-model="album.description"
         prepend-icon="description"
-        multi-line
-      ></v-text-field>
+      ></v-textarea>
       <v-btn color="primary" @click="add">Add Album</v-btn>
     </panel>
   </v-flex>

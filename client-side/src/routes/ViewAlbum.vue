@@ -2,7 +2,8 @@
 <div id="album-details">
   <v-layout>
     <v-flex xs6>
-      <img :src="album.image" alt="No Image.." class="a-image" />
+      <!-- TODO: debug pic -->
+      <img :src="album.imageUrl" alt="No Image.." class="a-image" />
     </v-flex>
     <v-flex xs6>
       <div class="a-title">
