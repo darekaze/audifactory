@@ -1,87 +1,24 @@
 <template>
-  <v-layout justify-center>
-    <v-flex xs6>
-      <!-- Design will be changed in the future -->
-      <panel title="Albums">
-        <div
-        v-for="album in albums"
-        :key="album.id"
-        class="album">
-          <v-layout>
-            <v-flex xs6>
-              <div class="a-title">
-                {{album.title}}
-              </div>
-              <div class="a-artist">
-                {{album.artist}}
-              </div>
-              <div class="a-genre">
-                {{album.genre}}
-              </div>
-              <div class="a-stocks">
-                {{album.stocks}}
-              </div>
-              <div class="a-loves">
-                {{album.loves}}
-              </div>
-              <v-btn
-                color="primary"
-                :to="{
-                  name: 'album',
-                  params: {
-                    albumId: album.id,
-                  },
-                }">
-                View
-              </v-btn>
-            </v-flex>
-            <v-flex xs6>
-              <img :src="album.imageUrl" alt="No Image.." class="a-image" />
-            </v-flex>
-          </v-layout>
-        </div>
-      </panel>
-    </v-flex>
-  </v-layout>
+<v-layout justify-center>
+  <v-flex xs6>
+    <albums-search-bar />
+    <albums-list />
+  </v-flex>
+</v-layout>
 </template>
 
 <script>
-import AlbumsService from '@/services/Albums';
-import Panel from '@/components/Panel.vue';
+import AlbumsSearchBar from '@/components/AlbumsSearchBar.vue';
+import AlbumsList from '@/components/AlbumsList.vue';
 
 export default {
   name: 'albums',
   components: {
-    Panel,
-  },
-  data() {
-    return {
-      albums: null,
-    };
-  },
-  async mounted() {
-    this.albums = (await AlbumsService.index()).data;
+    AlbumsSearchBar,
+    AlbumsList,
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.album {
-  padding: 20px;
-  height: 330px;
-  overflow: hidden;
-}
-.a-title {
-  font-size: 30px;
-}
-.a-artist {
-  font-size: 24px;
-}
-.a-genre {
-  font-size: 18px;
-}
-.a-image {
-  width: 95%;
-  margin: 0 auto;
-}
 </style>
