@@ -55,7 +55,6 @@ export default {
     };
   },
   watch: {
-    // Need to add debounce of 0.8s
     '$route.query.search': {
       immediate: true,
       async handler(value) {
