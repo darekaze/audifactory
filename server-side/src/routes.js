@@ -1,5 +1,5 @@
 const AuthController = require('./controllers/AuthController');
-const AlbumsController = require('./controllers/AlbumsController');
+const AlbumController = require('./controllers/AlbumController');
 
 const AuthControllerRule = require('./rules/AuthControllerRule');
 
@@ -11,12 +11,12 @@ module.exports = (app) => {
     AuthController.login);
 
   app.get('/albums',
-    AlbumsController.index);
+    AlbumController.index);
   app.get('/albums/:albumId',
-    AlbumsController.show);
+    AlbumController.show);
 
   app.post('/albums',
-    AlbumsController.post);
+    AlbumController.post);
   app.put('/albums/:albumId',
-    AlbumsController.put);
+    AlbumController.put);
 };
