@@ -1,5 +1,5 @@
 <template>
-<v-toolbar class="indigo" dark app flat fixed scroll-off-screen>
+<v-toolbar class="indigo" dark app flat fixed>
   <v-toolbar-title class="text-uppercase mr-4" to="/">
     <router-link class="title font-weight-light" to="/">
       ALMS
