@@ -19,7 +19,7 @@
     <v-btn flat icon to="/">
       <v-icon>account_circle</v-icon>
     </v-btn>
-    <v-btn flat @click="logout" to="/">Log Out</v-btn>
+    <v-btn flat @click="logout">Log Out</v-btn>
   </v-toolbar-items>
 
   <v-toolbar-items v-else>
@@ -36,7 +36,6 @@ export default {
     logout() {
       this.$store.dispatch('setToken', null);
       this.$store.dispatch('setUser', null);
-      this.$router.push('/');
     },
   },
 };
