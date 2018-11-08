@@ -1,5 +1,6 @@
 const AuthController = require('./controllers/AuthController');
 const AlbumController = require('./controllers/AlbumController');
+const LoveController = require('./controllers/LoveController');
 
 const AuthControllerRule = require('./rules/AuthControllerRule');
 
@@ -19,4 +20,11 @@ module.exports = (app) => {
     AlbumController.post);
   app.put('/albums/:albumId',
     AlbumController.put);
+
+  app.get('/loves',
+    LoveController.index);
+  app.post('/loves',
+    LoveController.post);
+  app.delete('/loves/:loveId',
+    LoveController.delete);
 };

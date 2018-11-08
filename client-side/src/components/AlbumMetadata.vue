@@ -9,20 +9,88 @@
   <div class="a-genre">
     {{album.genre}}
   </div>
-  <div class="a-stocks">
+  <div class="a-genre">
+    HKD {{album.price}}
+  </div>
+  <div>
+    Favorites: WiP //
     Avaliability: {{album.stocks}}
   </div>
-  <div class="a-loves">
-    Loves: {{album.loves}}
+
+  <div v-if="isUserLoggedIn">
+    <v-btn v-if="!love" @click="setLove" flat dark round color="pink">
+      <v-icon>favorite_border</v-icon>
+      Love It!
+    </v-btn>
+    <v-btn v-if="love" @click="unsetLove" flat dark round color="pink" >
+      <v-icon>favorite</v-icon>
+      Loved
+    </v-btn>
+    <v-btn flat dark round color="green" @click="addToCart">
+      <v-icon>add_shopping_cart</v-icon>
+      Add to cart
+    </v-btn>
+  </div>
+  <div v-else>
+    <p>Please Login or Register for more features</p>
   </div>
 </div>
 </template>
 
 <script>
+import { mapState } from 'vuex';
+import LoveService from '@/services/Loves';
+
 export default {
   props: [
     'album',
   ],
+  data() {
+    return {
+      love: null,
+    };
+  },
+  computed: {
+    ...mapState([
+      'isUserLoggedIn',
+    ]),
+  },
+  watch: {
+    async album() {
+      if (!this.isUserLoggedIn) return;
+      try {
+        this.love = (await LoveService.index({
+          albumId: this.album.id,
+          userId: this.$store.state.user.id,
+        })).data;
+      } catch (err) {
+        console.log(err); // eslint-disable-line no-console
+      }
+    },
+  },
+  methods: {
+    async setLove() {
+      try {
+        this.love = (await LoveService.post({
+          albumId: this.album.id,
+          userId: this.$store.state.user.id,
+        })).data;
+      } catch (err) {
+        console.log(err); // eslint-disable-line no-console
+      }
+    },
+    async unsetLove() {
+      try {
+        await LoveService.delete(this.love.id);
+        this.love = null;
+      } catch (err) {
+        console.log(err); // eslint-disable-line no-console
+      }
+    },
+    addToCart() {
+      console.log('Added to cart'); // eslint-disable-line no-console
+    },
+  },
 };
 </script>
 

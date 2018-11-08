@@ -5,12 +5,12 @@ const {
   sequelize,
   Album,
   User,
-  // Bookmark,
+  Love,
   // History,
 } = require('../src/models');
 const albums = require('./albums.json');
 const users = require('./users.json');
-// const bookmarks = require('./bookmarks.json');
+const loves = require('./loves.json');
 // const histories = require('./histories.json');
 
 sequelize.sync({ force: true })
@@ -27,11 +27,11 @@ sequelize.sync({ force: true })
       }),
     );
 
-    // await Promise.all(
-    //   bookmarks.map((bookmark) => {
-    //     Bookmark.create(bookmark);
-    //   }),
-    // );
+    await Promise.all(
+      loves.map((love) => {
+        Love.create(love);
+      }),
+    );
 
     // await Promise.all(
     //   histories.map((history) => {
