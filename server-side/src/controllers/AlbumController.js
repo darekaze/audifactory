@@ -32,7 +32,7 @@ module.exports = {
   },
   async show(req, res) {
     try {
-      const album = await Album.findById(req.params.albumId);
+      const album = await Album.findByPk(req.params.albumId);
       res.send(album);
     } catch (err) {
       res.status(500).send({

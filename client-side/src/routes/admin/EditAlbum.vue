@@ -79,7 +79,6 @@ export default {
         soundCloudId: null,
         songs: null,
         stocks: null,
-        loves: 0,
         description: null,
       },
     };
@@ -96,7 +95,7 @@ export default {
         await AlbumsService.put(this.album);
         this.$router.push(`/albums/${albumId}`);
       } catch (err) {
-        console.log(err);
+        console.log(err); // eslint-disable-line no-console
       }
     },
   },
@@ -106,7 +105,7 @@ export default {
       const albumId = this.$store.state.route.params.albumId;
       this.album = (await AlbumsService.show(albumId)).data;
     } catch (err) {
-      console.log(err);
+      console.log(err); // eslint-disable-line no-console
     }
   },
 };

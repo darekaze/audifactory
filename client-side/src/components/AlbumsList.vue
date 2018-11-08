@@ -19,9 +19,6 @@
         <div class="a-stocks">
           {{album.stocks}}
         </div>
-        <div class="a-loves">
-          {{album.loves}}
-        </div>
         <v-btn
           color="primary"
           :to="{

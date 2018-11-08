@@ -77,7 +77,6 @@ export default {
         soundCloudId: null,
         songs: null,
         stocks: null,
-        loves: 0,
         description: null,
       },
     };
@@ -91,7 +90,7 @@ export default {
         await AlbumsService.post(this.album);
         this.$router.push('/albums');
       } catch (err) {
-        // console.log(err);
+        console.log(err); // eslint-disable-line no-console
       }
     },
   },

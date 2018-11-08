@@ -7,7 +7,6 @@ module.exports = (sequelize, DataTypes) => {
     soundCloudId: DataTypes.STRING,
     price: DataTypes.INTEGER, /* $1.00 would be stored as 100. */
     stocks: DataTypes.INTEGER,
-    loves: DataTypes.INTEGER,
     description: DataTypes.TEXT,
     songs: DataTypes.JSON,
   });
