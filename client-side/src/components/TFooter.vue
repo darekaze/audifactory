@@ -9,6 +9,10 @@
         <router-link to="/">
           Audifactory
         </router-link>
+        //
+        <router-link to="/about">
+          About
+        </router-link>
       </v-flex>
     </v-layout>
   </v-footer>

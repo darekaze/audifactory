@@ -1,48 +1,50 @@
 <template>
-<v-layout align-center justify-center>
-  <v-flex xs11 sm7 md6 lg5 xl4>
-    <v-card class="elevation-4">
-      <v-img
-        height="120px"
-        src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-      >
-        <v-container fill-height fluid>
-          <v-layout>
-            <v-flex xs12 align-end d-flex>
-              <span class="headline white--text">Sign in</span>
-            </v-flex>
-          </v-layout>
-        </v-container>
-      </v-img>
-      <v-card-text>
-        <div class="error" v-html="error" />
-        <v-form>
-          <v-text-field
-            v-model="email"
-            prepend-icon="email"
-            type="email"
-            label="Email"
-            required
-          ></v-text-field>
-          <v-text-field
-            v-model="password"
-            prepend-icon="lock"
-            type="password"
-            label="Password"
-            required
-          ></v-text-field>
-        </v-form>
-      </v-card-text>
-      <v-card-actions>
-        <router-link class="link" to="/register">
-          Need an account?
-        </router-link>
-        <v-spacer></v-spacer>
-        <v-btn color="primary" @click="login">Login</v-btn>
-      </v-card-actions>
-    </v-card>
-  </v-flex>
-</v-layout>
+<v-container fluid>
+  <v-layout align-center justify-center>
+    <v-flex xs11 sm7 md6 lg5 xl4>
+      <v-card class="elevation-4">
+        <v-img
+          height="120px"
+          src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+        >
+          <v-container fill-height fluid>
+            <v-layout>
+              <v-flex xs12 align-end d-flex>
+                <span class="headline white--text">Sign in</span>
+              </v-flex>
+            </v-layout>
+          </v-container>
+        </v-img>
+        <v-card-text>
+          <div class="error" v-html="error" />
+          <v-form>
+            <v-text-field
+              v-model="email"
+              prepend-icon="email"
+              type="email"
+              label="Email"
+              required
+            ></v-text-field>
+            <v-text-field
+              v-model="password"
+              prepend-icon="lock"
+              type="password"
+              label="Password"
+              required
+            ></v-text-field>
+          </v-form>
+        </v-card-text>
+        <v-card-actions>
+          <router-link class="link" to="/register">
+            Need an account?
+          </router-link>
+          <v-spacer></v-spacer>
+          <v-btn color="primary" @click="login">Login</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-flex>
+  </v-layout>
+</v-container>
 </template>
 
 <script>
