@@ -53,16 +53,20 @@ export default {
   computed: {
     ...mapState([
       'isUserLoggedIn',
+      'user',
     ]),
   },
   watch: {
     async album() {
       if (!this.isUserLoggedIn) return;
       try {
-        this.love = (await LoveService.index({
+        const loves = (await LoveService.index({
           albumId: this.album.id,
-          userId: this.$store.state.user.id,
+          userId: this.user.id,
         })).data;
+        if (loves.length) {
+          [this.love] = loves;
+        }
       } catch (err) {
         console.log(err); // eslint-disable-line no-console
       }
@@ -73,7 +77,7 @@ export default {
       try {
         this.love = (await LoveService.post({
           albumId: this.album.id,
-          userId: this.$store.state.user.id,
+          userId: this.user.id,
         })).data;
       } catch (err) {
         console.log(err); // eslint-disable-line no-console
@@ -81,7 +85,7 @@ export default {
     },
     async unsetLove() {
       try {
-        await LoveService.delete(this.love.id);
+        await LoveService.delete(this.love.loveId);
         this.love = null;
       } catch (err) {
         console.log(err); // eslint-disable-line no-console

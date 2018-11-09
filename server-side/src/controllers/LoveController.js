@@ -1,14 +1,23 @@
 // const { Op } = require('sequelize');
-const { Love } = require('../models');
+const _ = require('lodash');
+const { Love, Album } = require('../models');
 
 module.exports = {
   async index(req, res) {
     try {
       const { albumId, userId } = req.query;
-      const love = await Love.findOne({
-        where: { albumId, userId },
-      });
-      res.send(love);
+      const where = { userId };
+      if (albumId) {
+        where.albumId = albumId;
+      }
+      const loves = await Love.findAll({
+        where,
+        include: [{ model: Album }],
+      }).map(love => love.toJSON())
+        .map(love => _.extend({
+          loveId: love.id,
+        }, love.Album));
+      res.send(loves);
     } catch (err) {
       res.status(500).send({
         error: 'Error in setting to love',

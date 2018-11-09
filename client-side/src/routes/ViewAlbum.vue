@@ -1,5 +1,5 @@
 <template>
-<div id="album-view">
+<v-container fluid>
   <v-layout>
     <v-flex xs6>
       <album-image :url="album.imageUrl"/>
@@ -13,7 +13,7 @@
   :songs="album.songs"
   :summary="album.description"
   />
-</div>
+</v-container>
 </template>
 
 <script>

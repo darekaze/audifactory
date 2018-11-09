@@ -19,6 +19,7 @@
     "express": "^4.16.4",
     "joi": "^14.0.4",
     "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.11",
     "morgan": "^1.9.1",
     "sequelize": "^4.41.0",
     "sqlite3": "^4.0.3"
