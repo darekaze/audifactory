@@ -49,5 +49,26 @@
       "werewolf howls. [\"Growling\" Long ver.]",
       "Bonus Track : Jingle (Metal Arrange / Cover)"
     ]
+  },
+  {
+    "title": "+(Deluxe Version",
+    "artist": "Ed Sheeran",
+    "genre": "Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000010417283-m18uph-t500x500.jpg",
+    "soundCloudId": "1025517",
+    "price": 12000,
+    "stocks": 77,
+    "description": "Listen to tracks from Ed's debut album '+' out now!",
+    "songs": [
+      "Drunk",
+      "U.N.I.",
+      "Grade 8",
+      "Wake Me Up",
+      "This",
+      "The City",
+      "Lego House",
+      "Kiss me",
+      "Give Me Love"
+    ]
   }
 ]
