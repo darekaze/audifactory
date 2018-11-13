@@ -70,5 +70,83 @@
       "Kiss me",
       "Give Me Love"
     ]
+  },
+  {
+    "title": "X",
+    "artist": "Ed Sheeran",
+    "genre": "Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000083492207-hfwaj9-t500x500.jpg",
+    "soundCloudId": "213950659",
+    "price": 9000,
+    "stocks": 98,
+    "description": "x (pronounced \"multiply\") is the second studio album by English singer-songwriter, Ed Sheeran. It was released on 20 June 2014 in Australia",
+    "songs": [
+      "Nina",
+      "Photograph",
+      "Bloodstream",
+      "Tenerife Sea",
+      "Afire Love First Time",
+      "Thinking Out Loud",
+      "The Man",
+      "Runaway",
+      "I'm a Mess",
+      "Dont"
+    ]
+  },
+  {
+    "title": "Fade Into Darkness Remix Competition Winners",
+    "artist": "Avicii",
+    "genre": "Electronic",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000036370580-t3vuhz-t500x500.jpg",
+    "soundCloudId": "71524208",
+    "price": 8000,
+    "stocks": 21,
+    "description": "He came, He saw & He kicked a hell of a lot of ass across the amazing 2012 Stereosonic tour & now we bring you new remixes of his massive anthem 'Fade Into Darkness' courtesy of the ONELOVE RMX competition, which saw literaly thousands of entries from almost every country in the world!",
+    "songs": [
+      "Fade Into Darkness (Jakob Liedholm Remix)",
+      "Fade Into Darkness (Danny Merx & Henrique Remix)",
+      "Fade Into Darkness (Uberjakd Remix)",
+      "Fade Into Darkness (Danny Lang, Oakes & Lennox Remix)",
+      "Fade Into Darkness (Neon Feather Remix)"
+    ]
+  },
+  {
+    "title": "Fade Into Darkness Remix Competition Winners",
+    "artist": "Avicii",
+    "genre": "Electronic",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000036370580-t3vuhz-t500x500.jpg",
+    "soundCloudId": "71524208",
+    "price": 8000,
+    "stocks": 21,
+    "description": "He came, He saw & He kicked a hell of a lot of ass across the amazing 2012 Stereosonic tour & now we bring you new remixes of his massive anthem 'Fade Into Darkness' courtesy of the ONELOVE RMX competition, which saw literaly thousands of entries from almost every country in the world!",
+    "songs": [
+      "Fade Into Darkness (Jakob Liedholm Remix)",
+      "Fade Into Darkness (Danny Merx & Henrique Remix)",
+      "Fade Into Darkness (Uberjakd Remix)",
+      "Fade Into Darkness (Danny Lang, Oakes & Lennox Remix)",
+      "Fade Into Darkness (Neon Feather Remix)"
+    ]
+  },
+  {
+    "title": "Clarity (Deluxe Edition)",
+    "artist": "Zedd",
+    "genre": "Electronic",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000031426236-gmg41u-t500x500.jpg",
+    "soundCloudId": "61971018",
+    "price": 13000,
+    "stocks": 91,
+    "description": "Clarity is the debut studio album by Russian-German electronic music producer Zedd, released on 5 October 2012 by Interscope Records. ",
+    "songs": [
+      "Hourglass (ft. Liz)",
+      "Lost at Sea (ft. Ryan Tedder)",
+      "Clarity (ft. Foxes)",
+      "Codec",
+      "Stache",
+      "Fall Into The Sky (ft. Ellie Goulding)",
+      "Follow You Down (ft. Bright Lights)",
+      "Epos",
+      "Stay The Night (feat. Hayley Williams of Paramore)",
+      "Push Play (feat. Miriam Bryant)"
+    ]
   }
 ]
