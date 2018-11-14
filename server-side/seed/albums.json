@@ -155,7 +155,7 @@
     "artist": "The Chainsmokers & Coldplay",
     "genre": "electronic",
     "imageUrl": "https://i1.sndcdn.com/artworks-000210680714-ja2puv-t500x500.jpg",
-    "soundCloudId": "305047394",
+    "soundCloudId": "309362641",
     "price": 6000,
     "stocks": 78,
     "description": " \" Something Just like This \" is a song by American electronic music duo The Chainsmokers and British rock band Coldplay.",
@@ -212,25 +212,6 @@
       "Clocks",
       "Fix You",
       "Paradise"
-    ]
-  },
-  {
-    "title": "Ghost Stories",
-    "artist": "Coldplay",
-    "genre": "Rock",
-    "imageUrl": "https://i1.sndcdn.com/artworks-000077859987-ib46q1-t500x500.jpg",
-    "soundCloudId": "146937089",
-    "price": 11000,
-    "stocks": 82,
-    "description": "Ghost Stories is the sixth studio album by British rock band Coldplay. Co-produced by the band with Paul Epworth along with returning Mylo Xyloto producers Daniel Green and Rik Simpson, it was released by Parlophone on 16 May 2014.",
-    "songs": [
-      "Oceans",
-      "Always In My Head",
-      "Another's Arms",
-      "O",
-      "Ink",
-      "True Love",
-      "Magic"
     ]
   },
   {
@@ -315,24 +296,6 @@
       "Get Out Of Your Own Way",
       "Want You To Know",
       "Our Friends"
-    ]
-  },
-  {
-    "title": "ハッピーエンド",
-    "artist": "Back number",
-    "genre": "J-Rock",
-    "imageUrl": "https://i1.sndcdn.com/artworks-000189984402-sp4784-t500x500.jpg",
-    "soundCloudId": "289286140",
-    "price": 12000,
-    "stocks": 116,
-    "description": "Number Station's sophomore EP. Recorded in our bedrooms & mixed by the wonderful Chris Coady.",
-    "songs": [
-      "ッピーエンド Happy End 『Acoustic Ver.』",
-      "君の代わり",
-      "クリスマスソング",
-      "高嶺の花子さん",
-      "花束",
-      "僕は君の事が好きだけど君は僕を別に好きじゃないみたい"
     ]
   },
   {
