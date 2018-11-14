@@ -140,7 +140,7 @@
     "soundCloudId": "27986368",
     "price": 7000,
     "stocks": 53,
-    "description": "mmortal is a remix album of music originally recorded by American recording artist Michael Jackson, and featuring The Jackson 5/The Jacksons, released on November 18, 2011 by Epic Records. The album is a soundtrack to Cirque du Soleil's Michael Jackson: The Immortal World Tour, which debuted on October 2, 2011 in Montreal.",
+    "description": "Immortal is a remix album of music originally recorded by American recording artist Michael Jackson, and featuring The Jackson 5/The Jacksons, released on November 18, 2011 by Epic Records. The album is a soundtrack to Cirque du Soleil's Michael Jackson: The Immortal World Tour, which debuted on October 2, 2011 in Montreal.",
     "songs": [
       "You Are Not Alone/I Just Can't Stop Loving You",
       "I'll Be There",
@@ -149,5 +149,293 @@
       "Who is it",
       "Immortal"
     ]
+  },
+  {
+    "title": "The Chainsmokers & Coldplay - Something Just Like This (Remixes)",
+    "artist": "The Chainsmokers & Coldplay",
+    "genre": "electronic",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000210680714-ja2puv-t500x500.jpg",
+    "soundCloudId": "305047394",
+    "price": 6000,
+    "stocks": 78,
+    "description": " \" Something Just like This \" is a song by American electronic music duo The Chainsmokers and British rock band Coldplay.",
+    "songs": [
+      "Something Just Like This (OutaMatic Remix)",
+      "Something Just Like This (ElementD Remix)",
+      "Something Just Like This (Danny Hook Bootleg)",
+      "Something Just Like This (Beau Collins Remix)",
+      "Something Just Like This (Koni Remix ft. Marina Lin)",
+      "Something Just Like This (VARGENTA & Labi Ramaj Remix)"
+    ]
+  },
+  {
+    "title": "Coldplay - Live in Sunderland",
+    "artist": "Coldplay",
+    "genre": "Pop Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000025065118-mk7hd7-t500x500.jpg",
+    "soundCloudId": "2113956",
+    "price": 8000,
+    "stocks": 42,
+    "description": "An EXCLUSIVE broadcast of one of Coldplay’s Mylo Xyloto sold-out UK gigs, recorded at Sunderland’s Stadium of Light, which was broadcast on Thursday 14th June.",
+    "songs": [
+      "Mylo Xyloto(Live ver.)",
+      "In My Place(Live ver.)",
+      "Yellow(Live ver.)",
+      "Violet Hill(Live ver.)",
+      "Princess of China(Live ver.)",
+      "Up In Flames(Live ver.)",
+      "Viva La Vida(Live ver.)",
+      "Charlie Brown(Live ver.)",
+      "Clocks(Live ver.)",
+      "Fix You(Live ver.)",
+      "Paradise(Live ver.)"
+    ]
+  },
+  {
+    "title": "The Chainsmokers & Coldplay - Something Just Like This (Remixes)",
+    "artist": "The Chainsmokers & Coldplay",
+    "genre": "Pop Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000025065118-mk7hd7-t500x500.jpg",
+    "soundCloudId": "2113956",
+    "price": 8000,
+    "stocks": 42,
+    "description": "An EXCLUSIVE broadcast of one of Coldplay’s Mylo Xyloto sold-out UK gigs, recorded at Sunderland’s Stadium of Light, which was broadcast on Thursday 14th June.",
+    "songs": [
+      "Mylo Xyloto",
+      "In My Place",
+      "Yellow",
+      "Violet Hill",
+      "Princess of China",
+      "Up In Flames",
+      "Viva La Vida",
+      "Charlie Brown",
+      "Clocks",
+      "Fix You",
+      "Paradise"
+    ]
+  },
+  {
+    "title": "Ghost Stories",
+    "artist": "Coldplay",
+    "genre": "Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000077859987-ib46q1-t500x500.jpg",
+    "soundCloudId": "146937089",
+    "price": 11000,
+    "stocks": 82,
+    "description": "Ghost Stories is the sixth studio album by British rock band Coldplay. Co-produced by the band with Paul Epworth along with returning Mylo Xyloto producers Daniel Green and Rik Simpson, it was released by Parlophone on 16 May 2014.",
+    "songs": [
+      "Oceans",
+      "Always In My Head",
+      "Another's Arms",
+      "O",
+      "Ink",
+      "True Love",
+      "Magic"
+    ]
+  },
+  {
+    "title": "Ghost Stories",
+    "artist": "Coldplay",
+    "genre": "Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000077859987-ib46q1-t500x500.jpg",
+    "soundCloudId": "146937089",
+    "price": 11000,
+    "stocks": 82,
+    "description": "Ghost Stories is the sixth studio album by British rock band Coldplay. Co-produced by the band with Paul Epworth along with returning Mylo Xyloto producers Daniel Green and Rik Simpson, it was released by Parlophone on 16 May 2014.",
+    "songs": [
+      "Oceans",
+      "Always In My Head",
+      "Another's Arms",
+      "O",
+      "Ink",
+      "True Love",
+      "Magic"
+    ]
+  },
+  {
+    "title": "The Black Parade",
+    "artist": "My Chemical Romance",
+    "genre": "Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-d612de53-1c51-4156-a9a4-c9674708d58e-0-t500x500.jpg",
+    "soundCloudId": "214807128",
+    "price": 13000,
+    "stocks": 98,
+    "description": "The Black Parade is the third studio album by American rock band My Chemical Romance. Released on October 23, 2006, through Reprise Records, it was produced by Rob Cavallo, known for having produced multiple albums for Goo Goo Dolls and Green Day.",
+    "songs": [
+      "The End.",
+      "Dead!",
+      "This Is How I Disappear",
+      "The Sharpest Lives",
+      "Welcome to the Black Parade",
+      "I Don't Love You",
+      "House of Wolves",
+      "Cancer",
+      "Mama",
+      "Sleep",
+      "Teenagers",
+      "Disenchanted",
+      "Famous Last Words",
+      "Blood (Hidden Track)"
+    ]
+  },
+  {
+    "title": "Ato no Matsuri",
+    "artist": "Back number",
+    "genre": "J-Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000235870481-x3xwqn-t500x500.jpg",
+    "soundCloudId": "341609142",
+    "price": 11000,
+    "stocks": 54,
+    "description": "back number,Ato no Matsuri,CD Album listed at CDJapan! Get it delivered safely by SAL, EMS, FedEx and save with CDJapan Rewards!",
+    "songs": [
+      "stay with me",
+      "あとのうた",
+      "浮ついた気持ち",
+      "風の強い日",
+      "tender",
+      "そのドレスちょっと待った",
+      "おまえさん",
+      "ハイスクールガール",
+      "Life",
+      "fallman",
+      "march"
+    ]
+  },
+  {
+    "title": "Back Seat - EP (2015)",
+    "artist": "Number Station",
+    "genre": "Electro",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000097194308-h2aju6-t500x500.jpg",
+    "soundCloudId": "58763413",
+    "price": 9000,
+    "stocks": 112,
+    "description": "Number Station's sophomore EP. Recorded in our bedrooms & mixed by the wonderful Chris Coady.",
+    "songs": [
+      "The Money",
+      "Get Out Of Your Own Way",
+      "Want You To Know",
+      "Our Friends"
+    ]
+  },
+  {
+    "title": "ハッピーエンド",
+    "artist": "Back number",
+    "genre": "J-Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000189984402-sp4784-t500x500.jpg",
+    "soundCloudId": "289286140",
+    "price": 12000,
+    "stocks": 116,
+    "description": "Number Station's sophomore EP. Recorded in our bedrooms & mixed by the wonderful Chris Coady.",
+    "songs": [
+      "ッピーエンド Happy End 『Acoustic Ver.』",
+      "君の代わり",
+      "クリスマスソング",
+      "高嶺の花子さん",
+      "花束",
+      "僕は君の事が好きだけど君は僕を別に好きじゃないみたい"
+    ]
+  },
+  {
+    "title": "ハッピーエンド",
+    "artist": "Back number",
+    "genre": "J-Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000189984402-sp4784-t500x500.jpg",
+    "soundCloudId": "289286140",
+    "price": 12000,
+    "stocks": 116,
+    "description": "Number Station's sophomore EP. Recorded in our bedrooms & mixed by the wonderful Chris Coady.",
+    "songs": [
+      "ッピーエンド Happy End 『Acoustic Ver.』",
+      "君の代わり",
+      "クリスマスソング",
+      "高嶺の花子さん",
+      "花束",
+      "僕は君の事が好きだけど君は僕を別に好きじゃないみたい"
+    ]
+  },
+  {
+    "title": "Some Nights",
+    "artist": "Fun.",
+    "genre": "Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000018297013-ut4iue-t500x500.jpg",
+    "soundCloudId": "1605273",
+    "price": 13500,
+    "stocks": 84,
+    "description": "The official stream for Fun.'s album Some Nights - available now on Fueled By Ramen.",
+    "songs": [
+      "Some Nights Intro",
+      "We Are Young ft. Janelle Monáe",
+      "Carry On",
+      "It Gets Better",
+      "All Alone",
+      "One Foot",
+      "Stars",
+      "All Alright",
+      "Out On The Town (Bonus Track)"
+    ]
+  },
+  {
+    "title": "En Chile",
+    "artist": "Green Day",
+    "genre": "Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000035725507-a52ja1-t500x500.jpg",
+    "soundCloudId": "2900049",
+    "price": 9000,
+    "stocks": 40,
+    "description": "Green Day is an American rock band formed in 1986 by lead vocalist and guitarist Billie Joe Armstrong and bassist Mike Dirnt.",
+    "songs": [
+      "Intro",
+      "Song of the Century",
+      "21st Century Breakdown",
+      "Know Your Enemy",
+      "East Jesus Nowhere",
+      "Holiday",
+      "Nice Guys Finish Last"
+    ]
+  },
+  {
+    "title": "OK Computer",
+    "artist": "Radiohead",
+    "genre": "Alternative Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000317355435-fhutv4-t500x500.jpg",
+    "soundCloudId": "41524212",
+    "price": 11500,
+    "stocks": 67,
+    "description": "Radiohead are an English rock band from Abingdon, Oxfordshire, formed in 1985. The band consists of Thom Yorke (vocals, guitar, piano, keyboards), brothers Jonny Greenwood (lead guitar, keyboards, other instruments) and Colin Greenwood (bass), Ed O'Brien (guitar, backing vocals) and Philip Selway (drums, percussion). They have worked with producer Nigel Godrich and cover artist Stanley Donwood since 1994.",
+    "songs": [
+      "Airbag",
+      "Paranoid Android",
+      "Subterranean Homesick Alien",
+      "Exit Music (For A Film)",
+      "Let Down",
+      "Karma Police",
+      "Fitter Happier",
+      "Electioneering",
+      "Climbing Up The Walls",
+      "No Surprises",
+      "Lucky",
+      "The Tourist",
+      "Give up the Ghost"
+    ]
+  },
+  {
+    "title": "TK",
+    "artist": "凛として時雨",
+    "genre": "J-pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000085951842-7ihau7-t500x500.jpg",
+    "soundCloudId": "159868216",
+    "price": 12000,
+    "stocks": 70,
+    "description": "凛として時雨 (Ling tosite Sigure) is a Japanese rock trio, formed in 2002 in Saitama Prefecture.[4] The band's style resembles post-hardcore and progressive rock, often incorporating rapid changes of tempo and mood framed in complex guitar melodies and technical drumming.",
+    "songs": [
+      "contrast",
+      "Paranoid Android",
+      "Dramatic Slow Motion",
+      "Crazy Tampern",
+      "illusion is mine",
+      "涙の旅路"
+    ]
   }
-]
+
+] 
+
