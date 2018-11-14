@@ -375,7 +375,278 @@
       "illusion is mine",
       "涙の旅路"
     ]
+  },
+  {
+    "title": "Eagles - Greatest Hits",
+    "artist": "Eagles",
+    "genre": "Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000099488647-ttxhnz-t500x500.jpg",
+    "soundCloudId": "62696888",
+    "price": 14000,
+    "stocks": 170,
+    "description": "Their Greatest Hits (1971–1975) is the first compilation album by the Eagles, released in 1976. The album contains a selection of songs from the Eagles' first four albums released in the period from the Eagles' formation in 1971 up to 1975. It was the best-selling album of the 20th century in the United States, and it stayed the best-selling album in the U.S. for some years until it was surpassed by Michael Jackson's Thriller after the artist's death in 2009.[1] In August 2018, it regained the title of the U.S.'s biggest-selling album, with a 38× Platinum certification by the Recording Industry Association of America.",
+    "songs": [
+      "One of these nights",
+      "New Kid in Town",
+      "Life in the Fast Lane",
+      "Heart of the Matter",
+      "Peaceful Easy Feeling",
+      "After the Thrill is Gone",
+      "On the Border",
+      "Take it Easy",
+      "Hotel California",
+      "Seven Bridges Road"
+    ]
+  },
+  {
+    "title": "Back in Black",
+    "artist": "AC/DC",
+    "genre": "Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000240450543-t7uaxn-t500x500.jpg",
+    "soundCloudId": "348972952",
+    "price": 10000,
+    "stocks": 20,
+    "description": "Back in Black is the seventh studio album by Australian rock band AC/DC. Produced by Robert John 'Mutt' Lange, the album was released on 25 July 1980 via Albert Productions and Atlantic Records",
+    "songs": [
+      "Hells Bells",
+      "What Do You Do for Money Honey",
+      "Life in the Fast Lane",
+      "What Do You Do for Money Honey",
+      "Shake a Leg",
+      "Rock and Roll Ain't Noise Pollution"
+    ]
+  },
+  {
+    "title": "The Best Of Vol. 1",
+    "artist": "Nickelback",
+    "genre": "Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000061299784-j1vrj5-t500x500.jpg",
+    "soundCloudId": "13276201",
+    "price": 15500,
+    "stocks": 220,
+    "description": "The Best of Nickelback Volume 1 is the first greatest hits album by Canadian rock band Nickelback.[1][2] It was released on November 4, 2013 through Roadrunner Records (internationally) and Universal Music Canada (in Canada) to coincide with their October–November 2013 'The Hits Tour'.[3][4] Though frontman Chad Kroeger had previously stated in an interview that their upcoming greatest hits album would include new songs as well as previous hits,[5] the final track listing contains only previously released material.",
+    "songs": [
+      "Photograph",
+      "How You Remind Me",
+      "Rockstar",
+      "Savin' Me",
+      "Too Bad",
+      "If Today Was Your Last Day",
+      "Far Away",
+      "Feelin' Way Too Damn Good",
+      "Someday",
+      "Never Again",
+      "Lullaby",
+      "If Everyone Cared",
+      "Gotta Be Somebody",
+      "When We Stand Together",
+      "Animals",
+      "Something in Your Mouth"
+    ]
+  },
+  {
+    "title": "V",
+    "artist": "Maroon5",
+    "genre": "Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000090106840-s3a4sy-t500x500.jpg",
+    "soundCloudId": "49603268",
+    "price": 19500,
+    "stocks": 700,
+    "description": "V (Roman numeral for five) is the fifth studio album by American band Maroon 5. It was released on August 29, 2014, by 222 and Interscope Records. V was Maroon 5's first album to be released through Interscope after the band's previous label, A&M Octone Records, transferred them along with most of its artists to Interscope. The album also saw the return of keyboardist/rhythm guitarist/backing vocalist Jesse Carmichael after his absence from recording, touring and promoting Overexposed in 2012.",
+    "songs": [
+      "Maps",
+      "Animals",
+      "It was always you",
+      "Unkiss Me",
+      "Sugar",
+      "Leaving California",
+      "In Your Pocket",
+      "New Love",
+      "Coming Back For You",
+      "Feelings",
+      "My Heart Is Open (feat. Gwen Stefani)"
+      
+    ]
+  },
+  {
+    "title": "All Time Favorites: Usher feat: Nu Beginning",
+    "artist": "Usher",
+    "genre": "R&B",
+    "imageUrl": "https://i1.sndcdn.com/artworks-e92af361-d907-4fe7-9000-ccd740ca016a-0-t500x500.jpg",
+    "soundCloudId": "633184893",
+    "price": 10500,
+    "stocks": 100,
+    "description": "Usher Raymond IV (born October 14, 1978) is an American singer, songwriter and dancer. He was born in Dallas, Texas, but raised in Chattanooga, Tennessee until moving to Atlanta, Georgia. At the age of 12, his mother put him in local singing competitions, before catching the attention of a music A&R from LaFace Records. He released his self-titled debut album, Usher (1994) but rose to fame in the late 1990s with the release of his second album My Way (1997). It spawned his first U.S. Billboard Hot 100 number-one single, 'Nice & Slow', amongst top-two singles 'You Make Me Wanna...'' and 'My Way'. 8701 (2001) produced the number-one singles 'U Remind Me' and 'U Got It Bad', and top-three single 'U Don't Have to Call'. It sold 8 million copies worldwide and won his first two Grammy Awards as Best Male R&B Vocal Performance in 2002 and 2003.",
+    "songs": [
+      "Jolly Dance",
+      "Only Human",
+      "The Groove",
+      "Keep Dreamin'",
+      "A Mother's Luv",
+      "Chatt Town",
+      "I Wanna Be",
+      "Sweet Baby",
+      "Superstar",
+      "Dream Girl"
+      
+    ]
+  },
+  {
+    "title": "The Ultimate Bee Gees",
+    "artist": "Bee Gees",
+    "genre": "Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000051913738-mxsf9s-t500x500.jpg",
+    "soundCloudId": "7323999",
+    "price": 8500,
+    "stocks": 10,
+    "description": "The Ultimate Bee Gees is a compilation album released to coincide with the 50th anniversary of the Bee Gees. Although the group did not start recording until 1963 on Festival Records in Australia, they began calling themselves the "Bee Gees" in 1959 after several name changes such as 'Wee Johnny Hayes and the Bluecats', 'The Rattlesnakes' and 'BG's'. Each disc is themed with the first containing more upbeat songs, called A Night Out, and the second containing slower songs and ballads, called A Night In, though the cover art does not distinguish this theme. Liner notes were written by Sir Tim Rice. This also marks the return of the 1970s era logo on an official Bee Gees release, which was last used on the Bee Gees' 1983 single 'Someone Belonging to Someone'.",
+    "songs": [
+      "Stayin' Alive (excerpt)",
+      "Jive Talkin' (excerpt)",
+      "Night Fever (excerpt)",
+      "More Than A Woman (excerpt)",
+      "If I Can't Have You (excerpt)",
+      "Love You Inside Out (excerpt)",
+      "You Win Again (excerpt)",
+      "Secret Love (excerpt)",
+      "Alone (excerpt)",
+      "Spicks And Specks [Live] (excerpt)",
+      "Love So Right (excerpt)",
+      "New York Mining Disaster 1941 (excerpt)",
+      "Heartbreaker [Live] (excerpt)",
+      "Guilty [Live] (excerpt)"
+      
+      
+    ]
+  },
+  {
+    "title": "Halcyon Days",
+    "artist": "Ellie Goulding",
+    "genre": "Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000056932847-ix53cu-t500x500.jpg",
+    "soundCloudId": "9887383",
+    "price": 14500,
+    "stocks": 50,
+    "description": "Halcyon Days is the reissue of English singer Ellie Goulding's second studio album, Halcyon (2012). It was released on 23 August 2013 by Polydor Records. Following the release of Halcyon, Goulding announced that she had plans to repackage the original album, with new songs that focused on electronic music. For the reissue, Goulding recorded 10 new songs and worked with a variety of producers, including Ryan Tedder, Calvin Harris and Greg Kurstin, to create her desired sound.",
+    "songs": [
+      "Don't Say A Word",
+      "My Blood",
+      "Anything Could Happen",
+      "Only You",
+      "Halcyon",
+      "Figure 8",
+      "JOY",
+      "Hanging On",
+      "Explosions",
+      "I Know You Care",
+      "Atlantis",
+      "Dead In The Water",
+      "Calvin Harris (Ft. Ellie Goulding) - I Need Your Love" ,
+      " Ritual",
+      "In My City",
+      "Without Your Love",
+      "Hanging On",
+      "Burn",
+      "Goodness Gracious",
+      "You My Everything",
+      "Hearts Without Chains",
+      "Ellie Goulding & Madeon - Stay Awake",
+      "Under Control",
+      "Flashlight (feat. DJ Fresh)",
+      "How Long Will I Love You",
+      "Tessellate",
+      "Midas Touch (Ellie Goulding x BURNS)"
+    
+    ]
+  },
+  {
+    "title": "1000 Forms of Fear",
+    "artist": "Sia",
+    "genre": "Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000083533679-xih4eb-t500x500.jpg",
+    "soundCloudId": "41533814",
+    "price": 13500,
+    "stocks": 106,
+    "description": "1000 Forms of Fear is the sixth studio album by Australian singer Sia. It was released on 4 July 2014 by Monkey Puzzle and RCA Records worldwide, and Inertia Records in Australia. Primarily an electropop album, the record also incorporates influences from reggae and hip hop. Lyrically, the record is focused on Sia struggling to deal with drug addiction and bipolar disorder.",
+    "songs": [
+      "Chandelier",
+      "Big Girls Cry",
+      "Eye Of The Needle"
+    ]
+  },
+  {
+    "title": "After Dark",
+    "artist": "Easy J-Pop Boys",
+    "genre": "J-Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-70dfdedb-1c15-44c0-8a5b-994ba741c61f-0-t500x500.jpg",
+    "soundCloudId": "326156801",
+    "price": 9000,
+    "stocks": 94,
+    "description": "Album release date: 18 April 2016",
+    "songs": [
+      "Uncontrollably Sad",
+      "After Dark",
+      "Gymnast",
+      "Attraction of Kochi Horses",
+      "Wearily",
+      "Ise Oysters",
+      "Truthfully",
+      "Izu Springs",
+      "Interested",
+      "Freak Sasebo",
+      "Elisa"
+    ]
+  },
+  {
+    "title": "SORA ～J POP X FILE",
+    "artist": "Hiragangsta",
+    "genre": "J-Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000212483458-s3wr7j-t500x500.jpg",
+    "soundCloudId": "312315158",
+    "price": 8500,
+    "stocks": 43,
+    "description": "I only used japanese pop-songs during making this EP.",
+    "songs": [
+      "space elevator",
+      "glances ～ romantique",
+      "sora",
+      "exotica",
+      "parkour"
+    ]
+  },
+  {
+    "title": "Dare Ka,Ume Wo.",
+    "artist": "Aimer",
+    "genre": "J-Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000090633984-wkvswz-t500x500.jpg",
+    "soundCloudId": "167127644",
+    "price": 8900,
+    "stocks": 67,
+    "description": "Aimer's Ending Anime Terror in the resonance",
+    "songs": [
+      "Hakuchuumu",
+      "Nemuri no Mori (Kazuki Remix)",
+      "Cold Sun (Ryo Nagano Remix)"
+    ]
+  },
+  {
+    "title": "VOCALOID: Miku ft. Supercell Album ",
+    "artist": "Miku",
+    "genre": "J-Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000042019418-1g5v15-t500x500.jpg",
+    "soundCloudId": "81579111",
+    "price": 10000,
+    "stocks": 76,
+    "description": "upercell (stylized as supercell) is the eponymous debut studio album of Japanese J-pop band Supercell, released on March 4, 2009 by Sony Music. ",
+    "songs": [
+      "Love is war",
+      "Love is war",
+      "Black Rock Shooter",
+      "Melt",
+      "The World Is Mine",
+      "Disappearance of Hatsune Miku (∞LIVE)",
+      "Romeo and Cinderella"
+    ]
   }
-
 ] 
 
