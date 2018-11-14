@@ -131,5 +131,23 @@
       "Stay The Night (feat. Hayley Williams of Paramore)",
       "Push Play (feat. Miriam Bryant)"
     ]
+  },
+  {
+    "title": "Immortal",
+    "artist": "Micheal Jackson",
+    "genre": "Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000014000571-lde9nr-t500x500.jpg",
+    "soundCloudId": "27986368",
+    "price": 7000,
+    "stocks": 53,
+    "description": "mmortal is a remix album of music originally recorded by American recording artist Michael Jackson, and featuring The Jackson 5/The Jacksons, released on November 18, 2011 by Epic Records. The album is a soundtrack to Cirque du Soleil's Michael Jackson: The Immortal World Tour, which debuted on October 2, 2011 in Montreal.",
+    "songs": [
+      "You Are Not Alone/I Just Can't Stop Loving You",
+      "I'll Be There",
+      "Is It Scary/Threatened/Thrille",
+      "Dancing Machine/Blame it on the Boogie",
+      "Who is it",
+      "Immortal"
+    ]
   }
 ]
