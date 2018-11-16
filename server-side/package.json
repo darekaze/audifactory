@@ -22,7 +22,8 @@
     "lodash": "^4.17.11",
     "morgan": "^1.9.1",
     "sequelize": "^4.41.0",
-    "sqlite3": "^4.0.3"
+    "sqlite3": "^4.0.3",
+    "vue-async-computed": "^3.5.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.4",

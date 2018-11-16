@@ -38,6 +38,9 @@
           <router-link class="link" to="/register">
             Need an account?
           </router-link>
+          <router-link class="link" to="/forgotpassword">
+            Forgot password?
+          </router-link>
           <v-spacer></v-spacer>
           <v-btn color="primary" @click="login">Login</v-btn>
         </v-card-actions>

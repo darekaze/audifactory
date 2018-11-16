@@ -10,6 +10,9 @@ module.exports = (app) => {
     AuthController.register);
   app.post('/login',
     AuthController.login);
+  app.post('/forgotpassword',
+    AuthControllerRule.forgotpassword,
+    AuthController.forgotpassword);
 
   app.get('/albums',
     AlbumController.index);

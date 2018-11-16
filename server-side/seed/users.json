@@ -2,6 +2,7 @@
   {
     "name": "Tester",
     "email": "testing@gmail.com",
+    "phonenumber":"12345678",
     "password": "12345678"
   }
 ]

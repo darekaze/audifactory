@@ -33,6 +33,13 @@
               required
             ></v-text-field>
             <v-text-field
+              v-model="phonenumber"
+              prepend-icon="phone"
+              type="text"
+              label="Phone Number"
+              required
+            ></v-text-field>
+            <v-text-field
               v-model="password"
               prepend-icon="lock"
               type="password"
@@ -62,6 +69,7 @@ export default {
     return {
       name: '',
       email: '',
+      phonenumber: '',
       password: '',
       error: null,
     };
@@ -70,7 +78,9 @@ export default {
     async register() {
       try {
         const response = await AuthService.register({
+          name: this.name,
           email: this.email,
+          phonenumber: this.phonenumber,
           password: this.password,
         });
         this.$store.dispatch('setToken', response.data.token);
