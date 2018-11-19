@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 const { User } = require('../models');
-const config = require('../config/config');
+const config = require('../config');
 
 function jwtSignUser(user) {
   const ONE_WEEK = 60 * 60 * 24 * 7;

@@ -45,10 +45,7 @@ export default {
     this.scLink = `soundcloud://${this.album.soundCloudId}`;
 
     if (this.isUserLoggedIn) {
-      AlbumHistoryService.post({
-        albumId,
-        userId: this.user.id,
-      });
+      AlbumHistoryService.post({ albumId });
     }
   },
   components: {

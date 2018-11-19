@@ -4,12 +4,14 @@ const { ViewHistory, Album } = require('../models');
 module.exports = {
   async index(req, res) {
     try {
-      const { userId } = req.query;
+      const userId = req.user.id;
       const histories = await ViewHistory.findAll({
-        where: {
-          userId,
-        },
+        where: { userId },
         include: [{ model: Album }],
+        group: ['AlbumId'],
+        order: [
+          ['createdAt', 'DESC'],
+        ],
       }).map(history => history.toJSON())
         .map(history => _.extend(
           {},
@@ -25,7 +27,8 @@ module.exports = {
   },
   async post(req, res) {
     try {
-      const { albumId, userId } = req.body;
+      const userId = req.user.id;
+      const { albumId } = req.body;
       const history = await ViewHistory.create({
         AlbumId: albumId,
         UserId: userId,

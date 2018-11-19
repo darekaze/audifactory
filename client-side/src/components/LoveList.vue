@@ -52,9 +52,7 @@ export default {
   },
   async mounted() {
     if (this.isUserLoggedIn) {
-      this.loves = (await LoveService.index({
-        userId: this.user.id,
-      })).data;
+      this.loves = (await LoveService.index()).data;
     }
   },
 };

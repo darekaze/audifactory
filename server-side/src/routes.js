@@ -4,6 +4,7 @@ const LoveController = require('./controllers/LoveController');
 const ViewHistoryController = require('./controllers/ViewHistoryController');
 
 const AuthControllerRule = require('./rules/AuthControllerRule');
+const isAuthenticated = require('./rules/isAuth');
 
 module.exports = (app) => {
   app.post('/register',
@@ -23,14 +24,19 @@ module.exports = (app) => {
     AlbumController.put);
 
   app.get('/loves',
+    isAuthenticated,
     LoveController.index);
   app.post('/loves',
+    isAuthenticated,
     LoveController.post);
   app.delete('/loves/:loveId',
+    isAuthenticated,
     LoveController.delete);
 
   app.get('/view-history',
+    isAuthenticated,
     ViewHistoryController.index);
   app.post('/view-history',
+    isAuthenticated,
     ViewHistoryController.post);
 };

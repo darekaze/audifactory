@@ -5,7 +5,8 @@ const { Love, Album } = require('../models');
 module.exports = {
   async index(req, res) {
     try {
-      const { albumId, userId } = req.query;
+      const userId = req.user.id;
+      const { albumId } = req.query;
       const where = { userId };
       if (albumId) {
         where.albumId = albumId;
@@ -26,7 +27,8 @@ module.exports = {
   },
   async post(req, res) {
     try {
-      const { albumId, userId } = req.body;
+      const userId = req.user.id;
+      const { albumId } = req.body;
       const love = await Love.findOne({
         where: { albumId, userId },
       });
@@ -48,8 +50,19 @@ module.exports = {
   },
   async delete(req, res) {
     try {
+      const userId = req.user.id;
       const { loveId } = req.params;
-      const love = await Love.findByPk(loveId);
+      const love = await Love.findOne({
+        where: {
+          id: loveId,
+          userId,
+        },
+      });
+      if (!love) {
+        return res.status(403).send({
+          error: 'No access to love list!!',
+        });
+      }
       await love.destroy();
       res.send(love);
     } catch (err) {

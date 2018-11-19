@@ -52,9 +52,7 @@ export default {
   },
   async mounted() {
     if (this.isUserLoggedIn) {
-      this.albums = (await AlbumHistoryService.index({
-        userId: this.user.id,
-      })).data;
+      this.albums = (await AlbumHistoryService.index()).data;
     }
   },
 };

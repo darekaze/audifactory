@@ -62,7 +62,6 @@ export default {
       try {
         const loves = (await LoveService.index({
           albumId: this.album.id,
-          userId: this.user.id,
         })).data;
         if (loves.length) {
           [this.love] = loves;
@@ -77,7 +76,6 @@ export default {
       try {
         this.love = (await LoveService.post({
           albumId: this.album.id,
-          userId: this.user.id,
         })).data;
       } catch (err) {
         console.log(err); // eslint-disable-line no-console
