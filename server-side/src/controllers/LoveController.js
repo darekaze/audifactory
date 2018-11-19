@@ -26,7 +26,7 @@ module.exports = {
   },
   async post(req, res) {
     try {
-      const { albumId, userId } = req.body.params;
+      const { albumId, userId } = req.body;
       const love = await Love.findOne({
         where: { albumId, userId },
       });

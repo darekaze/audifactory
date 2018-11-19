@@ -5,8 +5,8 @@ export default {
     return Api().get('loves', { params });
   },
 
-  post(params) {
-    return Api().post('loves', { params });
+  post(love) {
+    return Api().post('loves', love);
   },
 
   delete(loveId) {
