@@ -1,6 +1,7 @@
 const AuthController = require('./controllers/AuthController');
 const AlbumController = require('./controllers/AlbumController');
 const LoveController = require('./controllers/LoveController');
+const ViewHistoryController = require('./controllers/ViewHistoryController');
 
 const AuthControllerRule = require('./rules/AuthControllerRule');
 
@@ -27,4 +28,9 @@ module.exports = (app) => {
     LoveController.post);
   app.delete('/loves/:loveId',
     LoveController.delete);
+
+  app.get('/view-history',
+    ViewHistoryController.index);
+  app.post('/view-history',
+    ViewHistoryController.post);
 };

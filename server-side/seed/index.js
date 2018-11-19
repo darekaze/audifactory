@@ -6,12 +6,12 @@ const {
   Album,
   User,
   Love,
-  // History,
+  ViewHistory,
 } = require('../src/models');
 const albums = require('./albums.json');
 const users = require('./users.json');
 const loves = require('./loves.json');
-// const histories = require('./histories.json');
+const viewHistories = require('./viewHistories.json');
 
 sequelize.sync({ force: true })
   .then(async () => {
@@ -33,9 +33,9 @@ sequelize.sync({ force: true })
       }),
     );
 
-    // await Promise.all(
-    //   histories.map((history) => {
-    //     History.create(history);
-    //   }),
-    // );
+    await Promise.all(
+      viewHistories.map((history) => {
+        ViewHistory.create(history);
+      }),
+    );
   });

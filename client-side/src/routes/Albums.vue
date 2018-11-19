@@ -3,6 +3,7 @@
   <v-layout justify-center>
     <v-flex xs6>
       <love-list class="mr-2 mt-4" />
+      <viewed-history-list class="mr-2 mt-3" />
     </v-flex>
     <v-flex xs6>
       <albums-search-bar />
@@ -16,6 +17,7 @@
 import AlbumsSearchBar from '@/components/AlbumsSearchBar.vue';
 import AlbumsList from '@/components/AlbumsList.vue';
 import LoveList from '@/components/LoveList.vue';
+import ViewedHistoryList from '@/components/ViewedHistoryList.vue';
 
 export default {
   name: 'albums',
@@ -23,6 +25,7 @@ export default {
     AlbumsSearchBar,
     AlbumsList,
     LoveList,
+    ViewedHistoryList,
   },
 };
 </script>

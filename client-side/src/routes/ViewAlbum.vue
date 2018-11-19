@@ -17,7 +17,10 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
 import AlbumsService from '@/services/Albums';
+import AlbumHistoryService from '@/services/AlbumHistory';
+
 import AlbumImage from '@/components/AlbumImage.vue';
 import AlbumMetadata from '@/components/AlbumMetadata.vue';
 import AlbumDetail from '@/components/AlbumDetail.vue';
@@ -29,10 +32,24 @@ export default {
       scLink: '',
     };
   },
+  computed: {
+    ...mapState([
+      'isUserLoggedIn',
+      'user',
+      'route',
+    ]),
+  },
   async mounted() {
-    const { albumId } = this.$store.state.route.params;
+    const { albumId } = this.route.params;
     this.album = (await AlbumsService.show(albumId)).data;
     this.scLink = `soundcloud://${this.album.soundCloudId}`;
+
+    if (this.isUserLoggedIn) {
+      AlbumHistoryService.post({
+        albumId,
+        userId: this.user.id,
+      });
+    }
   },
   components: {
     AlbumImage,
