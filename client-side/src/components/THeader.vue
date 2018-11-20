@@ -13,6 +13,9 @@
   <v-spacer></v-spacer>
 
   <v-toolbar-items v-if="$store.state.isUserLoggedIn">
+    <v-btn flat icon to="/cart">
+      <v-icon>shopping_cart</v-icon>
+    </v-btn>
     <v-btn flat icon to="/">
       <v-icon>favorite</v-icon>
     </v-btn>
