@@ -6,7 +6,7 @@
       <viewed-history-list class="mr-2 mt-3" />
     </v-flex>
     <v-flex :class="{
-      xs12: !isUserLoggedIn,
+      xs10: !isUserLoggedIn,
       xs6: isUserLoggedIn
     }">
       <albums-search-bar />

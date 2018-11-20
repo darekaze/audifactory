@@ -49,6 +49,12 @@ export default new Router({
         import(/* webpackChunkName: "albums-mod" */ './admin/EditAlbum.vue'),
     },
     {
+      path: '/cart',
+      name: 'cart',
+      component: () =>
+        import(/* webpackChunkName: "about" */ './Cart.vue'),
+    },
+    {
       path: '/about',
       name: 'about',
       component: () =>

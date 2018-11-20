@@ -40,6 +40,7 @@
 <script>
 import { mapState } from 'vuex';
 import LoveService from '@/services/Loves';
+import CartService from '@/services/Carts';
 
 export default {
   props: [
@@ -89,8 +90,15 @@ export default {
         console.log(err); // eslint-disable-line no-console
       }
     },
-    addToCart() {
-      console.log('Added to cart'); // eslint-disable-line no-console
+    async addToCart() {
+      try {
+        this.item = (await CartService.post({
+          albumId: this.album.id,
+        })).data;
+        console.log('Added to cart'); // eslint-disable-line no-console
+      } catch (err) {
+        console.log(err); // eslint-disable-line no-console
+      }
     },
   },
 };
