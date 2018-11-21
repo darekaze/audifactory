@@ -32,9 +32,9 @@ export default {
     ViewedHistoryList,
   },
   computed: {
-    ...mapState([
-      'isUserLoggedIn',
-    ]),
+    ...mapState({
+      isUserLoggedIn: state => state.auth.isUserLoggedIn,
+    }),
   },
 };
 </script>

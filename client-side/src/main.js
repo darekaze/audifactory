@@ -3,7 +3,7 @@ import { sync } from 'vuex-router-sync';
 import Vue from 'vue';
 import App from './App.vue';
 import router from './routes/_router';
-import store from './stores/_store';
+import store from './store/index';
 import './registerServiceWorker';
 import './plugins/vuetify';
 import './plugins/vueMediaEmbed';

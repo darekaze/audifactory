@@ -18,9 +18,9 @@ export default {
     CartList,
   },
   computed: {
-    ...mapState([
-      'isUserLoggedIn',
-    ]),
+    ...mapState({
+      isUserLoggedIn: state => state.auth.isUserLoggedIn,
+    }),
   },
 };
 </script>

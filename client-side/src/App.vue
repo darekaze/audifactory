@@ -18,10 +18,5 @@ export default {
     THeader,
     TFooter,
   },
-  data() {
-    return {
-      //
-    };
-  },
 };
 </script>

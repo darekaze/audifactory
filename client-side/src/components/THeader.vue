@@ -12,7 +12,7 @@
 
   <v-spacer></v-spacer>
 
-  <v-toolbar-items v-if="$store.state.isUserLoggedIn">
+  <v-toolbar-items v-if="isUserLoggedIn">
     <v-btn flat icon to="/cart">
       <v-icon>shopping_cart</v-icon>
     </v-btn>
@@ -34,7 +34,14 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
 export default {
+  computed: {
+    ...mapState({
+      isUserLoggedIn: state => state.auth.isUserLoggedIn,
+    }),
+  },
   methods: {
     logout() {
       this.$store.dispatch('setToken', null);

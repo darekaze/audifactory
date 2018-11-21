@@ -57,10 +57,10 @@ export default {
     };
   },
   computed: {
-    ...mapState([
-      'isUserLoggedIn',
-      'user',
-    ]),
+    ...mapState({
+      isUserLoggedIn: state => state.auth.isUserLoggedIn,
+      user: state => state.auth.user,
+    }),
   },
   async mounted() {
     if (this.isUserLoggedIn) {
