@@ -57,12 +57,9 @@ export default {
       isUserLoggedIn: state => state.auth.isUserLoggedIn,
       user: state => state.auth.user,
     }),
-<<<<<<< HEAD
-=======
     getPrice() {
       return currency.format(this.album.price / 100);
     },
->>>>>>> Refactor vuex store to modules & add currency formatter
   },
   watch: {
     async album() {
