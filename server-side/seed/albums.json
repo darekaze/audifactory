@@ -49,5 +49,600 @@
       "werewolf howls. [\"Growling\" Long ver.]",
       "Bonus Track : Jingle (Metal Arrange / Cover)"
     ]
+  },
+  {
+    "title": "+(Deluxe Version",
+    "artist": "Ed Sheeran",
+    "genre": "Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000022680579-7droin-t500x500.jpg",
+    "soundCloudId": "21151670",
+    "price": 12000,
+    "stocks": 77,
+    "description": "Listen to tracks from Ed's debut album '+' out now!",
+    "songs": [
+      "Drunk",
+      "U.N.I",
+      "Grade 8",
+      "Wake Me Up",
+      "This",
+      "The City",
+      "Lego House",
+      "Kiss me",
+      "Give Me Love"
+    ]
+  },
+  {
+    "title": "Back in Black",
+    "artist": "AC/DC",
+    "genre": "Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000240450543-t7uaxn-t500x500.jpg",
+    "soundCloudId": "348972952",
+    "price": 10000,
+    "stocks": 20,
+    "description": "Back in Black is the seventh studio album by Australian rock band AC/DC. Produced by Robert John 'Mutt' Lange, the album was released on 25 July 1980 via Albert Productions and Atlantic Records",
+    "songs": [
+      "Hells Bells",
+      "What Do You Do for Money Honey",
+      "Life in the Fast Lane",
+      "What Do You Do for Money Honey",
+      "Shake a Leg",
+      "Rock and Roll Ain't Noise Pollution"
+    ]
+  },
+  {
+    "title": "X",
+    "artist": "Ed Sheeran",
+    "genre": "Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000083492207-hfwaj9-t500x500.jpg",
+    "soundCloudId": "213950659",
+    "price": 9000,
+    "stocks": 98,
+    "description": "x (pronounced \"multiply\") is the second studio album by English singer-songwriter, Ed Sheeran. It was released on 20 June 2014 in Australia",
+    "songs": [
+      "Nina",
+      "Photograph",
+      "Bloodstream",
+      "Tenerife Sea",
+      "Afire Love First Time",
+      "Thinking Out Loud",
+      "The Man",
+      "Runaway",
+      "I'm a Mess",
+      "Dont"
+    ]
+  },
+  {
+    "title": "Fade Into Darkness Remix Competition Winners",
+    "artist": "Avicii",
+    "genre": "Electronic",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000036370580-t3vuhz-t500x500.jpg",
+    "soundCloudId": "71524208",
+    "price": 8000,
+    "stocks": 21,
+    "description": "He came, He saw & He kicked a hell of a lot of ass across the amazing 2012 Stereosonic tour & now we bring you new remixes of his massive anthem 'Fade Into Darkness' courtesy of the ONELOVE RMX competition, which saw literaly thousands of entries from almost every country in the world!",
+    "songs": [
+      "Fade Into Darkness (Jakob Liedholm Remix)",
+      "Fade Into Darkness (Danny Merx & Henrique Remix)",
+      "Fade Into Darkness (Uberjakd Remix)",
+      "Fade Into Darkness (Danny Lang, Oakes & Lennox Remix)",
+      "Fade Into Darkness (Neon Feather Remix)"
+    ]
+  },
+  {
+    "title": "Clarity (Deluxe Edition)",
+    "artist": "Zedd",
+    "genre": "Electronic",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000031426236-gmg41u-t500x500.jpg",
+    "soundCloudId": "61971018",
+    "price": 13000,
+    "stocks": 91,
+    "description": "Clarity is the debut studio album by Russian-German electronic music producer Zedd, released on 5 October 2012 by Interscope Records. ",
+    "songs": [
+      "Hourglass (ft. Liz)",
+      "Lost at Sea (ft. Ryan Tedder)",
+      "Clarity (ft. Foxes)",
+      "Codec",
+      "Stache",
+      "Fall Into The Sky (ft. Ellie Goulding)",
+      "Follow You Down (ft. Bright Lights)",
+      "Epos",
+      "Stay The Night (feat. Hayley Williams of Paramore)",
+      "Push Play (feat. Miriam Bryant)"
+    ]
+  },
+  {
+    "title": "Immortal",
+    "artist": "Micheal Jackson",
+    "genre": "Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000014000571-lde9nr-t500x500.jpg",
+    "soundCloudId": "27986368",
+    "price": 7000,
+    "stocks": 53,
+    "description": "Immortal is a remix album of music originally recorded by American recording artist Michael Jackson, and featuring The Jackson 5/The Jacksons, released on November 18, 2011 by Epic Records. The album is a soundtrack to Cirque du Soleil's Michael Jackson: The Immortal World Tour, which debuted on October 2, 2011 in Montreal.",
+    "songs": [
+      "You Are Not Alone/I Just Can't Stop Loving You",
+      "I'll Be There",
+      "Is It Scary/Threatened/Thrille",
+      "Dancing Machine/Blame it on the Boogie",
+      "Who is it",
+      "Immortal"
+    ]
+  },
+  {
+    "title": "The Chainsmokers & Coldplay - Something Just Like This (Remixes)",
+    "artist": "The Chainsmokers & Coldplay",
+    "genre": "electronic",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000210680714-ja2puv-t500x500.jpg",
+    "soundCloudId": "309362641",
+    "price": 6000,
+    "stocks": 78,
+    "description": " \" Something Just like This \" is a song by American electronic music duo The Chainsmokers and British rock band Coldplay.",
+    "songs": [
+      "Something Just Like This (OutaMatic Remix)",
+      "Something Just Like This (ElementD Remix)",
+      "Something Just Like This (Danny Hook Bootleg)",
+      "Something Just Like This (Beau Collins Remix)",
+      "Something Just Like This (Koni Remix ft. Marina Lin)",
+      "Something Just Like This (VARGENTA & Labi Ramaj Remix)"
+    ]
+  },
+  {
+    "title": "Coldplay - Live in Sunderland",
+    "artist": "Coldplay",
+    "genre": "Pop Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000025065118-mk7hd7-t500x500.jpg",
+    "soundCloudId": "2113956",
+    "price": 8000,
+    "stocks": 42,
+    "description": "An EXCLUSIVE broadcast of one of Coldplay’s Mylo Xyloto sold-out UK gigs, recorded at Sunderland’s Stadium of Light, which was broadcast on Thursday 14th June.",
+    "songs": [
+      "Mylo Xyloto(Live ver.)",
+      "In My Place(Live ver.)",
+      "Yellow(Live ver.)",
+      "Violet Hill(Live ver.)",
+      "Princess of China(Live ver.)",
+      "Up In Flames(Live ver.)",
+      "Viva La Vida(Live ver.)",
+      "Charlie Brown(Live ver.)",
+      "Clocks(Live ver.)",
+      "Fix You(Live ver.)",
+      "Paradise(Live ver.)"
+    ]
+  },
+  {
+    "title": "Ghost Stories",
+    "artist": "Coldplay",
+    "genre": "Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000077859987-ib46q1-t500x500.jpg",
+    "soundCloudId": "146937089",
+    "price": 11000,
+    "stocks": 82,
+    "description": "Ghost Stories is the sixth studio album by British rock band Coldplay. Co-produced by the band with Paul Epworth along with returning Mylo Xyloto producers Daniel Green and Rik Simpson, it was released by Parlophone on 16 May 2014.",
+    "songs": [
+      "Oceans",
+      "Always In My Head",
+      "Another's Arms",
+      "O",
+      "Ink",
+      "True Love",
+      "Magic"
+    ]
+  },
+  {
+    "title": "The Black Parade",
+    "artist": "My Chemical Romance",
+    "genre": "Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-d612de53-1c51-4156-a9a4-c9674708d58e-0-t500x500.jpg",
+    "soundCloudId": "214807128",
+    "price": 13000,
+    "stocks": 98,
+    "description": "The Black Parade is the third studio album by American rock band My Chemical Romance. Released on October 23, 2006, through Reprise Records, it was produced by Rob Cavallo, known for having produced multiple albums for Goo Goo Dolls and Green Day.",
+    "songs": [
+      "The End.",
+      "Dead!",
+      "This Is How I Disappear",
+      "The Sharpest Lives",
+      "Welcome to the Black Parade",
+      "I Don't Love You",
+      "House of Wolves",
+      "Cancer",
+      "Mama",
+      "Sleep",
+      "Teenagers",
+      "Disenchanted",
+      "Famous Last Words",
+      "Blood (Hidden Track)"
+    ]
+  },
+  {
+    "title": "Ato no Matsuri",
+    "artist": "Back number",
+    "genre": "J-Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000235870481-x3xwqn-t500x500.jpg",
+    "soundCloudId": "341609142",
+    "price": 11000,
+    "stocks": 54,
+    "description": "back number,Ato no Matsuri,CD Album listed at CDJapan! Get it delivered safely by SAL, EMS, FedEx and save with CDJapan Rewards!",
+    "songs": [
+      "stay with me",
+      "あとのうた",
+      "浮ついた気持ち",
+      "風の強い日",
+      "tender",
+      "そのドレスちょっと待った",
+      "おまえさん",
+      "ハイスクールガール",
+      "Life",
+      "fallman",
+      "march"
+    ]
+  },
+  {
+    "title": "Back Seat - EP (2015)",
+    "artist": "Number Station",
+    "genre": "Electro",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000097194308-h2aju6-t500x500.jpg",
+    "soundCloudId": "58763413",
+    "price": 9000,
+    "stocks": 112,
+    "description": "Number Station's sophomore EP. Recorded in our bedrooms & mixed by the wonderful Chris Coady.",
+    "songs": [
+      "The Money",
+      "Get Out Of Your Own Way",
+      "Want You To Know",
+      "Our Friends"
+    ]
+  },
+  {
+    "title": "ハッピーエンド",
+    "artist": "Back number",
+    "genre": "J-Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000189984402-sp4784-t500x500.jpg",
+    "soundCloudId": "289286140",
+    "price": 12000,
+    "stocks": 116,
+    "description": "Number Station's sophomore EP. Recorded in our bedrooms & mixed by the wonderful Chris Coady.",
+    "songs": [
+      "ッピーエンド Happy End 『Acoustic Ver.』",
+      "君の代わり",
+      "クリスマスソング",
+      "高嶺の花子さん",
+      "花束",
+      "僕は君の事が好きだけど君は僕を別に好きじゃないみたい"
+    ]
+  },
+  {
+    "title": "Some Nights",
+    "artist": "Fun.",
+    "genre": "Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000018297013-ut4iue-t500x500.jpg",
+    "soundCloudId": "1605273",
+    "price": 13500,
+    "stocks": 84,
+    "description": "The official stream for Fun.'s album Some Nights - available now on Fueled By Ramen.",
+    "songs": [
+      "Some Nights Intro",
+      "We Are Young ft. Janelle Monáe",
+      "Carry On",
+      "It Gets Better",
+      "All Alone",
+      "One Foot",
+      "Stars",
+      "All Alright",
+      "Out On The Town (Bonus Track)"
+    ]
+  },
+  {
+    "title": "En Chile",
+    "artist": "Green Day",
+    "genre": "Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000035725507-a52ja1-t500x500.jpg",
+    "soundCloudId": "2900049",
+    "price": 9000,
+    "stocks": 40,
+    "description": "Green Day is an American rock band formed in 1986 by lead vocalist and guitarist Billie Joe Armstrong and bassist Mike Dirnt.",
+    "songs": [
+      "Intro",
+      "Song of the Century",
+      "21st Century Breakdown",
+      "Know Your Enemy",
+      "East Jesus Nowhere",
+      "Holiday",
+      "Nice Guys Finish Last"
+    ]
+  },
+  {
+    "title": "OK Computer",
+    "artist": "Radiohead",
+    "genre": "Alternative Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000317355435-fhutv4-t500x500.jpg",
+    "soundCloudId": "41524212",
+    "price": 11500,
+    "stocks": 67,
+    "description": "Radiohead are an English rock band from Abingdon, Oxfordshire, formed in 1985. The band consists of Thom Yorke (vocals, guitar, piano, keyboards), brothers Jonny Greenwood (lead guitar, keyboards, other instruments) and Colin Greenwood (bass), Ed O'Brien (guitar, backing vocals) and Philip Selway (drums, percussion). They have worked with producer Nigel Godrich and cover artist Stanley Donwood since 1994.",
+    "songs": [
+      "Airbag",
+      "Paranoid Android",
+      "Subterranean Homesick Alien",
+      "Exit Music (For A Film)",
+      "Let Down",
+      "Karma Police",
+      "Fitter Happier",
+      "Electioneering",
+      "Climbing Up The Walls",
+      "No Surprises",
+      "Lucky",
+      "The Tourist",
+      "Give up the Ghost"
+    ]
+  },
+  {
+    "title": "Eagles - Greatest Hits",
+    "artist": "Eagles",
+    "genre": "Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000099488647-ttxhnz-t500x500.jpg",
+    "soundCloudId": "62696888",
+    "price": 14000,
+    "stocks": 170,
+    "description": "Their Greatest Hits (1971–1975) is the first compilation album by the Eagles, released in 1976. The album contains a selection of songs from the Eagles' first four albums released in the period from the Eagles' formation in 1971 up to 1975. It was the best-selling album of the 20th century in the United States, and it stayed the best-selling album in the U.S. for some years until it was surpassed by Michael Jackson's Thriller after the artist's death in 2009.[1] In August 2018, it regained the title of the U.S.'s biggest-selling album, with a 38× Platinum certification by the Recording Industry Association of America.",
+    "songs": [
+      "One of these nights",
+      "New Kid in Town",
+      "Life in the Fast Lane",
+      "Heart of the Matter",
+      "Peaceful Easy Feeling",
+      "After the Thrill is Gone",
+      "On the Border",
+      "Take it Easy",
+      "Hotel California",
+      "Seven Bridges Road"
+    ]
+  },
+  {
+    "title": "TK",
+    "artist": "凛として時雨",
+    "genre": "J-pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000085951842-7ihau7-t500x500.jpg",
+    "soundCloudId": "159868216",
+    "price": 12000,
+    "stocks": 70,
+    "description": "凛として時雨 (Ling tosite Sigure) is a Japanese rock trio, formed in 2002 in Saitama Prefecture.[4] The band's style resembles post-hardcore and progressive rock, often incorporating rapid changes of tempo and mood framed in complex guitar melodies and technical drumming.",
+    "songs": [
+      "contrast",
+      "Paranoid Android",
+      "Dramatic Slow Motion",
+      "Crazy Tampern",
+      "illusion is mine",
+      "涙の旅路"
+    ]
+  },
+  {
+    "title": "The Best Of Vol. 1",
+    "artist": "Nickelback",
+    "genre": "Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000061299784-j1vrj5-t500x500.jpg",
+    "soundCloudId": "13276201",
+    "price": 15500,
+    "stocks": 220,
+    "description": "The Best of Nickelback Volume 1 is the first greatest hits album by Canadian rock band Nickelback.[1][2] It was released on November 4, 2013 through Roadrunner Records (internationally) and Universal Music Canada (in Canada) to coincide with their October–November 2013 'The Hits Tour'.[3][4] Though frontman Chad Kroeger had previously stated in an interview that their upcoming greatest hits album would include new songs as well as previous hits,[5] the final track listing contains only previously released material.",
+    "songs": [
+      "Photograph",
+      "How You Remind Me",
+      "Rockstar",
+      "Savin' Me",
+      "Too Bad",
+      "If Today Was Your Last Day",
+      "Far Away",
+      "Feelin' Way Too Damn Good",
+      "Someday",
+      "Never Again",
+      "Lullaby",
+      "If Everyone Cared",
+      "Gotta Be Somebody",
+      "When We Stand Together",
+      "Animals",
+      "Something in Your Mouth"
+    ]
+  },
+  {
+    "title": "V",
+    "artist": "Maroon5",
+    "genre": "Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000090106840-s3a4sy-t500x500.jpg",
+    "soundCloudId": "49603268",
+    "price": 19500,
+    "stocks": 700,
+    "description": "V (Roman numeral for five) is the fifth studio album by American band Maroon 5. It was released on August 29, 2014, by 222 and Interscope Records. V was Maroon 5's first album to be released through Interscope after the band's previous label, A&M Octone Records, transferred them along with most of its artists to Interscope. The album also saw the return of keyboardist/rhythm guitarist/backing vocalist Jesse Carmichael after his absence from recording, touring and promoting Overexposed in 2012.",
+    "songs": [
+      "Maps",
+      "Animals",
+      "It was always you",
+      "Unkiss Me",
+      "Sugar",
+      "Leaving California",
+      "In Your Pocket",
+      "New Love",
+      "Coming Back For You",
+      "Feelings",
+      "My Heart Is Open (feat. Gwen Stefani)"
+    ]
+  },
+  {
+    "title": "All Time Favorites: Usher feat: Nu Beginning",
+    "artist": "Usher",
+    "genre": "R&B",
+    "imageUrl": "https://i1.sndcdn.com/artworks-e92af361-d907-4fe7-9000-ccd740ca016a-0-t500x500.jpg",
+    "soundCloudId": "633184893",
+    "price": 10500,
+    "stocks": 100,
+    "description": "Usher Raymond IV (born October 14, 1978) is an American singer, songwriter and dancer. He was born in Dallas, Texas, but raised in Chattanooga, Tennessee until moving to Atlanta, Georgia. At the age of 12, his mother put him in local singing competitions, before catching the attention of a music A&R from LaFace Records. He released his self-titled debut album, Usher (1994) but rose to fame in the late 1990s with the release of his second album My Way (1997). It spawned his first U.S. Billboard Hot 100 number-one single, 'Nice & Slow', amongst top-two singles 'You Make Me Wanna...'' and 'My Way'. 8701 (2001) produced the number-one singles 'U Remind Me' and 'U Got It Bad', and top-three single 'U Don't Have to Call'. It sold 8 million copies worldwide and won his first two Grammy Awards as Best Male R&B Vocal Performance in 2002 and 2003.",
+    "songs": [
+      "Jolly Dance",
+      "Only Human",
+      "The Groove",
+      "Keep Dreamin'",
+      "A Mother's Luv",
+      "Chatt Town",
+      "I Wanna Be",
+      "Sweet Baby",
+      "Superstar",
+      "Dream Girl"
+      
+    ]
+  },
+  {
+    "title": "The Ultimate Bee Gees",
+    "artist": "Bee Gees",
+    "genre": "Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000051913738-mxsf9s-t500x500.jpg",
+    "soundCloudId": "7323999",
+    "price": 8500,
+    "stocks": 10,
+    "description": "The Ultimate Bee Gees is a compilation album released to coincide with the 50th anniversary of the Bee Gees. Although the group did not start recording until 1963 on Festival Records in Australia, they began calling themselves the \"Bee Gees\" in 1959 after several name changes such as 'Wee Johnny Hayes and the Bluecats', 'The Rattlesnakes' and 'BG's'. Each disc is themed with the first containing more upbeat songs, called A Night Out, and the second containing slower songs and ballads, called A Night In, though the cover art does not distinguish this theme. Liner notes were written by Sir Tim Rice. This also marks the return of the 1970s era logo on an official Bee Gees release, which was last used on the Bee Gees' 1983 single 'Someone Belonging to Someone'.",
+    "songs": [
+      "Stayin' Alive (excerpt)",
+      "Jive Talkin' (excerpt)",
+      "Night Fever (excerpt)",
+      "More Than A Woman (excerpt)",
+      "If I Can't Have You (excerpt)",
+      "Love You Inside Out (excerpt)",
+      "You Win Again (excerpt)",
+      "Secret Love (excerpt)",
+      "Alone (excerpt)",
+      "Spicks And Specks [Live] (excerpt)",
+      "Love So Right (excerpt)",
+      "New York Mining Disaster 1941 (excerpt)",
+      "Heartbreaker [Live] (excerpt)",
+      "Guilty [Live] (excerpt)"
+    ]
+  },
+  {
+    "title": "Halcyon Days",
+    "artist": "Ellie Goulding",
+    "genre": "Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000056932847-ix53cu-t500x500.jpg",
+    "soundCloudId": "9887383",
+    "price": 14500,
+    "stocks": 50,
+    "description": "Halcyon Days is the reissue of English singer Ellie Goulding's second studio album, Halcyon (2012). It was released on 23 August 2013 by Polydor Records. Following the release of Halcyon, Goulding announced that she had plans to repackage the original album, with new songs that focused on electronic music. For the reissue, Goulding recorded 10 new songs and worked with a variety of producers, including Ryan Tedder, Calvin Harris and Greg Kurstin, to create her desired sound.",
+    "songs": [
+      "Don't Say A Word",
+      "My Blood",
+      "Anything Could Happen",
+      "Only You",
+      "Halcyon",
+      "Figure 8",
+      "JOY",
+      "Hanging On",
+      "Explosions",
+      "I Know You Care",
+      "Atlantis",
+      "Dead In The Water",
+      "Calvin Harris (Ft. Ellie Goulding) - I Need Your Love" ,
+      " Ritual",
+      "In My City",
+      "Without Your Love",
+      "Hanging On",
+      "Burn",
+      "Goodness Gracious",
+      "You My Everything",
+      "Hearts Without Chains",
+      "Ellie Goulding & Madeon - Stay Awake",
+      "Under Control",
+      "Flashlight (feat. DJ Fresh)",
+      "How Long Will I Love You",
+      "Tessellate",
+      "Midas Touch (Ellie Goulding x BURNS)"
+    ]
+  },
+  {
+    "title": "1000 Forms of Fear",
+    "artist": "Sia",
+    "genre": "Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000083533679-xih4eb-t500x500.jpg",
+    "soundCloudId": "41533814",
+    "price": 13500,
+    "stocks": 106,
+    "description": "1000 Forms of Fear is the sixth studio album by Australian singer Sia. It was released on 4 July 2014 by Monkey Puzzle and RCA Records worldwide, and Inertia Records in Australia. Primarily an electropop album, the record also incorporates influences from reggae and hip hop. Lyrically, the record is focused on Sia struggling to deal with drug addiction and bipolar disorder.",
+    "songs": [
+      "Chandelier",
+      "Big Girls Cry",
+      "Eye Of The Needle"
+    ]
+  },
+  {
+    "title": "After Dark",
+    "artist": "Easy J-Pop Boys",
+    "genre": "J-Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-70dfdedb-1c15-44c0-8a5b-994ba741c61f-0-t500x500.jpg",
+    "soundCloudId": "326156801",
+    "price": 9000,
+    "stocks": 94,
+    "description": "Album release date: 18 April 2016",
+    "songs": [
+      "Uncontrollably Sad",
+      "After Dark",
+      "Gymnast",
+      "Attraction of Kochi Horses",
+      "Wearily",
+      "Ise Oysters",
+      "Truthfully",
+      "Izu Springs",
+      "Interested",
+      "Freak Sasebo",
+      "Elisa"
+    ]
+  },
+  {
+    "title": "SORA ～J POP X FILE",
+    "artist": "Hiragangsta",
+    "genre": "J-Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000212483458-s3wr7j-t500x500.jpg",
+    "soundCloudId": "312315158",
+    "price": 8500,
+    "stocks": 43,
+    "description": "I only used japanese pop-songs during making this EP.",
+    "songs": [
+      "space elevator",
+      "glances ～ romantique",
+      "sora",
+      "exotica",
+      "parkour"
+    ]
+  },
+  {
+    "title": "Dare Ka,Ume Wo.",
+    "artist": "Aimer",
+    "genre": "J-Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000090633984-wkvswz-t500x500.jpg",
+    "soundCloudId": "167127644",
+    "price": 8900,
+    "stocks": 67,
+    "description": "Aimer's Ending Anime Terror in the resonance",
+    "songs": [
+      "Hakuchuumu",
+      "Nemuri no Mori (Kazuki Remix)",
+      "Cold Sun (Ryo Nagano Remix)"
+    ]
+  },
+  {
+    "title": "VOCALOID: Miku ft. Supercell Album ",
+    "artist": "Miku",
+    "genre": "J-Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000042019418-1g5v15-t500x500.jpg",
+    "soundCloudId": "81579111",
+    "price": 10000,
+    "stocks": 76,
+    "description": "Supercell (stylized as supercell) is the eponymous debut studio album of Japanese J-pop band Supercell, released on March 4, 2009 by Sony Music. ",
+    "songs": [
+      "Love is war",
+      "Love is war",
+      "Black Rock Shooter",
+      "Melt",
+      "The World Is Mine",
+      "Disappearance of Hatsune Miku (∞LIVE)",
+      "Romeo and Cinderella"
+    ]
   }
-]
+] 
+
