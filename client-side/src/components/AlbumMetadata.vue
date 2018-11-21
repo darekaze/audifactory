@@ -10,7 +10,7 @@
     {{album.genre}}
   </div>
   <div class="a-genre">
-    HKD {{album.price}}
+    {{getPrice}}
   </div>
   <div>
     Favorites: WiP //
@@ -41,6 +41,7 @@
 import { mapState } from 'vuex';
 import LoveService from '@/services/Loves';
 import CartService from '@/services/Carts';
+import currency from '@/filters/currency';
 
 export default {
   props: [
@@ -56,6 +57,12 @@ export default {
       isUserLoggedIn: state => state.auth.isUserLoggedIn,
       user: state => state.auth.user,
     }),
+<<<<<<< HEAD
+=======
+    getPrice() {
+      return currency.format(this.album.price / 100);
+    },
+>>>>>>> Refactor vuex store to modules & add currency formatter
   },
   watch: {
     async album() {
