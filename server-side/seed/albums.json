@@ -359,24 +359,6 @@
     ]
   },
   {
-    "title": "TK",
-    "artist": "凛として時雨",
-    "genre": "J-pop",
-    "imageUrl": "https://i1.sndcdn.com/artworks-000085951842-7ihau7-t500x500.jpg",
-    "soundCloudId": "159868216",
-    "price": 12000,
-    "stocks": 70,
-    "description": "凛として時雨 (Ling tosite Sigure) is a Japanese rock trio, formed in 2002 in Saitama Prefecture.[4] The band's style resembles post-hardcore and progressive rock, often incorporating rapid changes of tempo and mood framed in complex guitar melodies and technical drumming.",
-    "songs": [
-      "contrast",
-      "Paranoid Android",
-      "Dramatic Slow Motion",
-      "Crazy Tampern",
-      "illusion is mine",
-      "涙の旅路"
-    ]
-  },
-  {
     "title": "Eagles - Greatest Hits",
     "artist": "Eagles",
     "genre": "Rock",
@@ -396,6 +378,24 @@
       "Take it Easy",
       "Hotel California",
       "Seven Bridges Road"
+    ]
+  },
+  {
+    "title": "TK",
+    "artist": "凛として時雨",
+    "genre": "J-pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000085951842-7ihau7-t500x500.jpg",
+    "soundCloudId": "159868216",
+    "price": 12000,
+    "stocks": 70,
+    "description": "凛として時雨 (Ling tosite Sigure) is a Japanese rock trio, formed in 2002 in Saitama Prefecture.[4] The band's style resembles post-hardcore and progressive rock, often incorporating rapid changes of tempo and mood framed in complex guitar melodies and technical drumming.",
+    "songs": [
+      "contrast",
+      "Paranoid Android",
+      "Dramatic Slow Motion",
+      "Crazy Tampern",
+      "illusion is mine",
+      "涙の旅路"
     ]
   },
   {
@@ -633,7 +633,7 @@
     "soundCloudId": "81579111",
     "price": 10000,
     "stocks": 76,
-    "description": "upercell (stylized as supercell) is the eponymous debut studio album of Japanese J-pop band Supercell, released on March 4, 2009 by Sony Music. ",
+    "description": "Supercell (stylized as supercell) is the eponymous debut studio album of Japanese J-pop band Supercell, released on March 4, 2009 by Sony Music. ",
     "songs": [
       "Love is war",
       "Love is war",
