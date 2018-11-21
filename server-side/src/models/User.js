@@ -19,10 +19,12 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       unique: true,
     },
+    phonenumber: DataTypes.STRING,
     password: DataTypes.STRING,
   }, {
     hooks: {
-      beforeSave: hashPassword,
+      beforeUpdate: hashPassword,
+      beforeCreate: hashPassword,
     },
   });
 

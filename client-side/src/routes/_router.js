@@ -19,6 +19,12 @@ export default new Router({
         import(/* webpackChunkName: "auth" */ './Register.vue'),
     },
     {
+      path: '/forgotpassword',
+      name: 'forgotpassword',
+      component: () =>
+        import(/* webpackChunkName: "auth" */ './ForgotPassword.vue'),
+    },
+    {
       path: '/login',
       name: 'login',
       component: () =>
