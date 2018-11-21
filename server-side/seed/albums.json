@@ -51,6 +51,27 @@
     ]
   },
   {
+    "title": "+(Deluxe Version",
+    "artist": "Ed Sheeran",
+    "genre": "Pop",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000022680579-7droin-t500x500.jpg",
+    "soundCloudId": "21151670",
+    "price": 12000,
+    "stocks": 77,
+    "description": "Listen to tracks from Ed's debut album '+' out now!",
+    "songs": [
+      "Drunk",
+      "U.N.I",
+      "Grade 8",
+      "Wake Me Up",
+      "This",
+      "The City",
+      "Lego House",
+      "Kiss me",
+      "Give Me Love"
+    ]
+  },
+  {
     "title": "Back in Black",
     "artist": "AC/DC",
     "genre": "Rock",
