@@ -66,46 +66,44 @@
 import AuthService from '@/services/Auth';
 
 export default {
-    data(){
-        return{
-            email: '',
-            phonenumber:'',
-            error: null,
-            response: null,
-            password: '',
-        };
-    },
-    methods:{
-        async forgotpassword(){
-            try {
-              const response = await AuthService.forgotpassword({
-                  email: this.email,
-                  phonenumber: this.phonenumber,
-              });
-              if(response){
-                this.response = response;
-                this.error = null;
-              }
-            } catch (error) {
-                this.error = error.response.data.error;
-            }
-        },
-        async resetpassword(){
-          try {
-            const response = await AuthService.forgotpassword({
-              email: this.email,
-              password: this.password,
-              });
-            if(response)
-              alert(JSON.stringify(response));
-          } catch (error) {
-            this.error = error.response.data.error;
-          }
+  data() {
+    return {
+      email: '',
+      phonenumber: '',
+      error: null,
+      response: null,
+      password: '',
+    };
+  },
+  methods: {
+    async forgotpassword() {
+      try {
+        const response = await AuthService.forgotpassword({
+          email: this.email,
+          phonenumber: this.phonenumber,
+        });
+        if (response) {
+          this.response = response;
+          this.error = null;
         }
+      } catch (error) {
+        this.error = error.response.data.error;
+      }
     },
+    async resetpassword() {
+      try {
+        const response = await AuthService.forgotpassword({
+          email: this.email,
+          password: this.password,
+        });
+        if (response) alert(JSON.stringify(response)); // eslint-disable-line
+      } catch (error) {
+        this.error = error.response.data.error;
+      }
+    },
+  },
 };
 </script>
 
-<style>
-
+<style lang="scss" scoped>
 </style>

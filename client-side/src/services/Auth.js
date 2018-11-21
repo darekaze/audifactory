@@ -7,7 +7,7 @@ export default {
   login(credentials) {
     return Api().post('login', credentials);
   },
-  forgotpassword(credentials){
-    return Api().post('forgotpassword',credentials);
+  forgotpassword(credentials) {
+    return Api().post('forgotpassword', credentials);
   },
 };

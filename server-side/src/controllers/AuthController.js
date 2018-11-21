@@ -54,49 +54,33 @@ module.exports = {
       });
     }
   },
-  async forgotpassword(req , res){
-    function hashPassword(user, options) {
-      const SALT_FACTOR = 244;
-      if (!user.changed('password')) return;
-      return bcrypt
-        .genSaltAsync(SALT_FACTOR)
-        .then(salt => bcrypt.hashAsync(user.password, salt, null))
-        .then((hash) => {
-          user.setDataValue('password', hash);
-        });
-    }
+  async forgotpassword(req, res) {
     try {
-      const { email,password,phonenumber } = req.body;
-      if(phonenumber){
+      const { email, password, phonenumber } = req.body;
+      if (phonenumber) {
         const user = await User.findOne({
-          attributes: ['email','phonenumber'],
-          where:{
+          attributes: ['email', 'phonenumber'],
+          where: {
             email,
-            phonenumber
+            phonenumber,
           },
         });
-        if(user){
+        if (user) {
           res.send(user);
         }
-
-        if(!user){
+        if (!user) {
           res.status(403).send({
-            error: "The email or phone number does not exists"
+            error: 'The email or phone number does not exists',
           });
         }
-      }
-      else{
-          return User.findOne({
-            where:{
-              email: email,
-            }
-          }).then(function(result){
-            return result.update({"password": password}).then(function(){
-              res.send({updated: true});
-            });
-          });
-          //await User.create(user);
-          
+      } else {
+        return User.findOne({
+          where: { email },
+        }).then(result => result
+          .update({ password })
+          .then(() => {
+            res.send({ updated: true });
+          }));
       }
     } catch (error) {
       res.status(500).send({

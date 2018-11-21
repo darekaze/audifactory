@@ -24,8 +24,7 @@
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "sequelize": "^4.41.0",
-    "sqlite3": "^4.0.3",
-    "vue-async-computed": "^3.5.0"
+    "sqlite3": "^4.0.3"
   },
   "devDependencies": {
     "@types/cors": "^2.8.4",

@@ -46,9 +46,7 @@ module.exports = {
           break;
       }
     }
-
-    if(!error)
-      next();
+    if (!error) next();
   },
   forgotpassword(req, res, next) {
     const schema = {
@@ -86,7 +84,6 @@ module.exports = {
           }); break;
       }
     }
-    if(!error)
-      next();
+    if (!error) next();
   },
 };
