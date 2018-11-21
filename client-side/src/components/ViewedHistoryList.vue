@@ -5,11 +5,23 @@
       :pagination.sync="pagination"
       :items="albums">
       <template slot="items" slot-scope="props">
-        <td class="text-xs-right">
+        <td class="text-xs">
           {{ props.item.title }}
         </td>
-        <td class="text-xs-right">
+        <td class="text-xs">
           {{ props.item.artist }}
+        </td>
+        <td class="text-xs-right">
+          <v-btn
+            color="primary"
+            :to="{
+              name: 'album',
+              params: {
+                albumId: props.item.id,
+              },
+            }">
+            View
+          </v-btn>
         </td>
       </template>
     </v-data-table>

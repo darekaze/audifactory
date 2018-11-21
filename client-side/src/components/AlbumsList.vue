@@ -17,7 +17,10 @@
           {{album.genre}}
         </div>
         <div class="a-stocks">
-          {{album.stocks}}
+          Stock: {{album.stocks}}
+        </div>
+        <div class="a-price">
+          HKD {{album.price}}
         </div>
         <v-btn
           color="primary"
