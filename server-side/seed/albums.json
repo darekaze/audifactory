@@ -72,6 +72,24 @@
     ]
   },
   {
+    "title": "Back in Black",
+    "artist": "AC/DC",
+    "genre": "Rock",
+    "imageUrl": "https://i1.sndcdn.com/artworks-000240450543-t7uaxn-t500x500.jpg",
+    "soundCloudId": "348972952",
+    "price": 10000,
+    "stocks": 20,
+    "description": "Back in Black is the seventh studio album by Australian rock band AC/DC. Produced by Robert John 'Mutt' Lange, the album was released on 25 July 1980 via Albert Productions and Atlantic Records",
+    "songs": [
+      "Hells Bells",
+      "What Do You Do for Money Honey",
+      "Life in the Fast Lane",
+      "What Do You Do for Money Honey",
+      "Shake a Leg",
+      "Rock and Roll Ain't Noise Pollution"
+    ]
+  },
+  {
     "title": "X",
     "artist": "Ed Sheeran",
     "genre": "Pop",
@@ -396,24 +414,6 @@
       "Crazy Tampern",
       "illusion is mine",
       "涙の旅路"
-    ]
-  },
-  {
-    "title": "Back in Black",
-    "artist": "AC/DC",
-    "genre": "Rock",
-    "imageUrl": "https://i1.sndcdn.com/artworks-000240450543-t7uaxn-t500x500.jpg",
-    "soundCloudId": "348972952",
-    "price": 10000,
-    "stocks": 20,
-    "description": "Back in Black is the seventh studio album by Australian rock band AC/DC. Produced by Robert John 'Mutt' Lange, the album was released on 25 July 1980 via Albert Productions and Atlantic Records",
-    "songs": [
-      "Hells Bells",
-      "What Do You Do for Money Honey",
-      "Life in the Fast Lane",
-      "What Do You Do for Money Honey",
-      "Shake a Leg",
-      "Rock and Roll Ain't Noise Pollution"
     ]
   },
   {
