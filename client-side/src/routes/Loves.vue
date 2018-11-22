@@ -2,7 +2,7 @@
 <v-container fluid>
   <v-layout justify-center>
     <v-flex xs10 v-if="isUserLoggedIn">
-      <cart-list class="mr-2 mt-4" />
+      <love-list class="mr-2 mt-4" />
     </v-flex>
   </v-layout>
 </v-container>
@@ -10,12 +10,12 @@
 
 <script>
 import { mapState } from 'vuex';
-import CartList from '@/components/CartList.vue';
+import LoveList from '@/components/LoveList.vue';
 
 export default {
-  name: 'cart',
+  name: 'loves',
   components: {
-    CartList,
+    LoveList,
   },
   computed: {
     ...mapState({

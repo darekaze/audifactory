@@ -16,7 +16,7 @@
     <v-btn flat icon to="/cart">
       <v-icon>shopping_cart</v-icon>
     </v-btn>
-    <v-btn flat icon to="/">
+    <v-btn flat icon to="/loves">
       <v-icon>favorite</v-icon>
     </v-btn>
     <v-btn flat icon to="/">
