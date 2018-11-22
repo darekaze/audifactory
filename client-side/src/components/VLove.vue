@@ -1,19 +1,34 @@
 <template>
 <v-container fluid grid-list-md>
-  <h2>Newly Added</h2>
+  <h2 class="pb-3">New Arrival</h2>
   <v-data-iterator
     :items="albums"
     :rows-per-page-items="rowsPerPageItems"
     :pagination.sync="pagination"
     content-tag="v-layout"
-    row wrap>
+    row wrap justify-center>
     <v-flex
       slot="item"
       slot-scope="props"
-      xs12 sm6 md4 lg3>
-      <v-card>
-        <v-card-title><h4>{{ props.item.title }}</h4></v-card-title>
-        <v-divider></v-divider>
+      >
+      <v-card
+        width="300px"
+        :to="{
+            name: 'album',
+            params: {
+              albumId: props.item.id,
+            },
+          }">
+        <v-img
+          :src="props.item.imageUrl"
+          height="300px">
+        </v-img>
+        <v-card-title primary-title>
+          <div>
+            <div class="headline">{{ props.item.title }}</div>
+            <span class="orange--text">{{getPrice(props.item.price)}}</span>
+          </div>
+        </v-card-title>
       </v-card>
     </v-flex>
   </v-data-iterator>
@@ -40,13 +55,8 @@ export default {
       return currency.format(price / 100);
     },
   },
-  watch: {
-    '$route.query.search': {
-      immediate: true,
-      async handler(value) {
-        this.albums = (await AlbumsService.index(value)).data;
-      },
-    },
+  async mounted() {
+    this.albums = (await AlbumsService.index('')).data;
   },
 };
 </script>
