@@ -26,8 +26,7 @@
   </v-toolbar-items>
 
   <v-toolbar-items v-else>
-    <v-btn flat to="/login">Login</v-btn>
-    <v-btn flat to="/register">Sign Up</v-btn>
+    <auth-pop-up/>
   </v-toolbar-items>
 
 </v-toolbar>
@@ -35,8 +34,13 @@
 
 <script>
 import { mapState } from 'vuex';
+import AuthPopUp from '@/components/AuthWindow/AuthPopUp.vue';
 
 export default {
+  name: 'header',
+  components: {
+    AuthPopUp,
+  },
   computed: {
     ...mapState({
       isUserLoggedIn: state => state.auth.isUserLoggedIn,
