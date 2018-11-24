@@ -37,7 +37,7 @@ import { mapState } from 'vuex';
 import AuthPopUp from '@/components/AuthWindow/AuthPopUp.vue';
 
 export default {
-  name: 'header',
+  name: 'THeader',
   components: {
     AuthPopUp,
   },

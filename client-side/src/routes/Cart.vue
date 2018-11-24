@@ -2,6 +2,7 @@
 <v-container fluid>
   <v-layout justify-center>
     <v-flex xs10 v-if="isUserLoggedIn">
+      <h2 class="ml-2">Cart</h2>
       <cart-list class="mr-2 mt-4" />
     </v-flex>
   </v-layout>
