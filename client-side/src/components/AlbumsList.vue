@@ -20,7 +20,7 @@
           Stock: {{album.stocks}}
         </div>
         <div class="a-price">
-          HKD {{album.price}}
+          {{getPrice(album.price)}}
         </div>
         <v-btn
           color="primary"
@@ -44,6 +44,7 @@
 <script>
 import AlbumsService from '@/services/Albums';
 import Panel from '@/components/Panel.vue';
+import currency from '@/filters/currency';
 
 export default {
   components: {
@@ -53,6 +54,11 @@ export default {
     return {
       albums: null,
     };
+  },
+  methods: {
+    getPrice(price) {
+      return currency.format(price / 100);
+    },
   },
   watch: {
     '$route.query.search': {

@@ -33,11 +33,11 @@ export default {
     };
   },
   computed: {
-    ...mapState([
-      'isUserLoggedIn',
-      'user',
-      'route',
-    ]),
+    ...mapState({
+      isUserLoggedIn: state => state.auth.isUserLoggedIn,
+      user: state => state.auth.user,
+      route: state => state.route,
+    }),
   },
   async mounted() {
     const { albumId } = this.route.params;

@@ -13,24 +13,6 @@ export default new Router({
       component: Home,
     },
     {
-      path: '/register',
-      name: 'register',
-      component: () =>
-        import(/* webpackChunkName: "auth" */ './Register.vue'),
-    },
-    {
-      path: '/forgotpassword',
-      name: 'forgotpassword',
-      component: () =>
-        import(/* webpackChunkName: "auth" */ './ForgotPassword.vue'),
-    },
-    {
-      path: '/login',
-      name: 'login',
-      component: () =>
-        import(/* webpackChunkName: "auth" */ './Login.vue'),
-    },
-    {
       path: '/albums',
       name: 'albums',
       component: () =>
@@ -58,13 +40,25 @@ export default new Router({
       path: '/cart',
       name: 'cart',
       component: () =>
-        import(/* webpackChunkName: "about" */ './Cart.vue'),
+        import(/* webpackChunkName: "cart" */ './Cart.vue'),
+    },
+    {
+      path: '/loves',
+      name: 'loves',
+      component: () =>
+        import(/* webpackChunkName: "loves" */ './Loves.vue'),
     },
     {
       path: '/about',
       name: 'about',
       component: () =>
         import(/* webpackChunkName: "about" */ './About.vue'),
+    },
+    {
+      path: '/forgotpassword',
+      name: 'forgotpassword',
+      component: () =>
+        import(/* webpackChunkName: "auth" */ './ForgotPassword.vue'),
     },
     {
       path: '*',

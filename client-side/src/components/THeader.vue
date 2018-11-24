@@ -12,11 +12,11 @@
 
   <v-spacer></v-spacer>
 
-  <v-toolbar-items v-if="$store.state.isUserLoggedIn">
+  <v-toolbar-items v-if="isUserLoggedIn">
     <v-btn flat icon to="/cart">
       <v-icon>shopping_cart</v-icon>
     </v-btn>
-    <v-btn flat icon to="/">
+    <v-btn flat icon to="/loves">
       <v-icon>favorite</v-icon>
     </v-btn>
     <v-btn flat icon to="/">
@@ -26,15 +26,26 @@
   </v-toolbar-items>
 
   <v-toolbar-items v-else>
-    <v-btn flat to="/login">Login</v-btn>
-    <v-btn flat to="/register">Sign Up</v-btn>
+    <auth-pop-up/>
   </v-toolbar-items>
 
 </v-toolbar>
 </template>
 
 <script>
+import { mapState } from 'vuex';
+import AuthPopUp from '@/components/AuthWindow/AuthPopUp.vue';
+
 export default {
+  name: 'THeader',
+  components: {
+    AuthPopUp,
+  },
+  computed: {
+    ...mapState({
+      isUserLoggedIn: state => state.auth.isUserLoggedIn,
+    }),
+  },
   methods: {
     logout() {
       this.$store.dispatch('setToken', null);
