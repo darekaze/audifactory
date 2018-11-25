@@ -8,7 +8,7 @@
   <template slot="items" slot-scope="props">
     <td class="text-xs">
       <router-link :to="{
-        name: 'album',
+        name: 'albums',
         params: {
           albumId: props.item.AlbumId,
         },

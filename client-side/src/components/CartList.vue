@@ -22,7 +22,7 @@
         <v-btn
           color="primary"
           :to="{
-            name: 'album',
+            name: 'albums',
             params: {
               albumId: props.item.id,
             },
