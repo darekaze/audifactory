@@ -1,15 +1,16 @@
 <template>
 <v-container fluid>
   <v-layout justify-center>
-    <v-flex xs3 v-if="isUserLoggedIn">
-      <viewed-history-list class="mr-2 mt-4" />
+    <v-flex xs3>
+      <category-list/>
+      <viewed-history-list v-if="isUserLoggedIn" class="mr-2 mt-2" />
     </v-flex>
     <v-flex :class="{
       xs10: !isUserLoggedIn,
       xs7: isUserLoggedIn
     }">
       <albums-search-bar />
-      <albums-list class="mt-2"/>
+      <albums-list />
     </v-flex>
   </v-layout>
 </v-container>
@@ -20,13 +21,15 @@ import { mapState } from 'vuex';
 import AlbumsSearchBar from '@/components/AlbumsSearchBar.vue';
 import AlbumsList from '@/components/AlbumsList.vue';
 import ViewedHistoryList from '@/components/ViewedHistoryList.vue';
+import CategoryList from '@/components/CategoryList.vue';
 
 export default {
-  name: 'albums',
+  name: 'albumPage',
   components: {
     AlbumsSearchBar,
     AlbumsList,
     ViewedHistoryList,
+    CategoryList,
   },
   computed: {
     ...mapState({

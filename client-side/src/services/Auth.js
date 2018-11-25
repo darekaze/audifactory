@@ -1,11 +1,11 @@
 import Api from './_api';
 
 export default {
-  register(credentials) {
-    return Api().post('register', credentials);
+  register(credentials, recaptcha) {
+    return Api().post('register', { credentials, recaptcha });
   },
-  login(credentials) {
-    return Api().post('login', credentials);
+  login(credentials, recaptcha) {
+    return Api().post('login', { credentials, recaptcha });
   },
   forgotpassword(credentials) {
     return Api().post('forgotpassword', credentials);

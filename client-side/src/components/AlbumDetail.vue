@@ -1,6 +1,6 @@
 <template>
   <v-layout justify-center>
-    <v-flex xs5>
+    <v-flex xs8 sm6 md4>
       <v-card flat>
         <v-img>
           <vue-media-embed
@@ -11,9 +11,7 @@
         </v-img>
       <v-card-title>{{ summary }}</v-card-title>
       </v-card>
-    </v-flex>
 
-    <v-flex xs5>
       <v-list>
         <v-subheader>Songs List</v-subheader>
         <v-list-tile

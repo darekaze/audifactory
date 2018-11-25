@@ -12,7 +12,12 @@ function jwtSignUser(user) {
 module.exports = {
   async register(req, res) {
     try {
-      const user = await User.create(req.body);
+      if (!req.body.recaptcha) {
+        res.status(403).send({
+          error: 'Please enter the reCAPTCHA!',
+        });
+      }
+      const user = await User.create(req.body.credentials);
       const userJson = user.toJSON();
       res.send({
         user: userJson,
@@ -26,7 +31,12 @@ module.exports = {
   },
   async login(req, res) {
     try {
-      const { email, password } = req.body;
+      if (!req.body.recaptcha) {
+        res.status(403).send({
+          error: 'Please enter the reCAPTCHA!',
+        });
+      }
+      const { email, password } = req.body.credentials;
       const user = await User.findOne({
         where: {
           email,

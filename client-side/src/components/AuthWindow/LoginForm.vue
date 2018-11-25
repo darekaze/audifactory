@@ -31,6 +31,11 @@
         :rules="passwordRules"
         required
       ></v-text-field>
+      <vue-recaptcha
+        ref="recaptcha"
+        @verify="onVerify"
+        :sitekey="sitekey">
+      </vue-recaptcha>
     </v-form>
   </v-card-text>
 
@@ -50,12 +55,12 @@
 </template>
 
 <script>
+import VueRecaptcha from 'vue-recaptcha';
 import AuthService from '@/services/Auth';
 
 export default {
   data() {
     return {
-      valid: false,
       email: '',
       emailRules: [
         v => !!v || 'E-mail is required',
@@ -67,7 +72,13 @@ export default {
         v => (v && v.length >= 8) || 'Password must be more than 8 characters',
       ],
       error: null,
+      valid: false,
+      recaptchaResponse: null,
+      sitekey: '6Lf4G2gUAAAAANVI2ndLFcJUrzGm7qXUGndJbT4r',
     };
+  },
+  components: {
+    VueRecaptcha,
   },
   mounted() {
     this.valid = false;
@@ -78,18 +89,24 @@ export default {
         const response = await AuthService.login({
           email: this.email,
           password: this.password,
-        });
+        }, this.recaptchaResponse);
         this.$store.dispatch('setToken', response.data.token);
         this.$store.dispatch('setUser', response.data.user);
         this.$emit('done');
         this.$refs.form.reset();
       } catch (error) {
         this.error = error.response.data.error;
+      } finally {
+        this.recaptchaResponse = null;
+        this.$refs.recaptcha.reset();
       }
     },
     redirect() {
       this.$router.push('/forgotpassword');
       this.$emit('done');
+    },
+    onVerify(response) {
+      this.recaptchaResponse = response;
     },
   },
 };

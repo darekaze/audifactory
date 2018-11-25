@@ -12,6 +12,7 @@ module.exports = {
         order: [
           ['createdAt', 'DESC'],
         ],
+        limit: 8,
       }).map(history => history.toJSON())
         .map(history => _.extend(
           {},

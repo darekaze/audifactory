@@ -5,7 +5,7 @@ module.exports = {
   async index(req, res) {
     try {
       let albums = null;
-      const { search } = req.query;
+      const { search, limit } = req.query;
       if (search) {
         albums = await Album.findAll({
           where: {
@@ -20,7 +20,7 @@ module.exports = {
         });
       } else {
         albums = await Album.findAll({
-          limit: 10,
+          limit,
         });
       }
       res.send(albums);
