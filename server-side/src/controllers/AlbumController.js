@@ -20,7 +20,7 @@ module.exports = {
         });
       } else {
         albums = await Album.findAll({
-          limit: 10,
+          limit: 24,
         });
       }
       res.send(albums);
