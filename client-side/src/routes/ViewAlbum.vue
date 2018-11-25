@@ -1,10 +1,10 @@
 <template>
 <v-container fluid>
-  <v-layout>
-    <v-flex xs6>
+  <v-layout justify-center>
+    <v-flex xs6 sm5 md4>
       <album-image :url="album.imageUrl"/>
     </v-flex>
-    <v-flex xs6>
+    <v-flex xs6 sm5 md4>
       <album-metadata :album="album"/>
     </v-flex>
   </v-layout>
@@ -12,6 +12,7 @@
   :link="scLink"
   :songs="album.songs"
   :summary="album.description"
+  class="mt-5"
   />
 </v-container>
 </template>

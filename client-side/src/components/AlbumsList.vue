@@ -78,13 +78,13 @@ export default {
   overflow: hidden;
 }
 .a-title {
-  font-size: 30px;
+  font-size: 1.7rem;
 }
 .a-artist {
-  font-size: 24px;
+  font-size: 1.3rem;
 }
 .a-genre {
-  font-size: 18px;
+  font-size: 1.3rem;
 }
 .a-image {
   width: 95%;

@@ -1,52 +1,36 @@
 <template>
-  <panel title="Recently Viewed">
-    <v-data-table
-      :headers="headers"
-      :pagination.sync="pagination"
-      :items="albums">
-      <template slot="items" slot-scope="props">
-        <td class="text-xs">
-          {{ props.item.title }}
-        </td>
-        <td class="text-xs">
-          {{ props.item.artist }}
-        </td>
-        <td class="text-xs-right">
-          <v-btn
-            color="primary"
-            :to="{
-              name: 'album',
-              params: {
-                albumId: props.item.id,
-              },
-            }">
-            View
-          </v-btn>
-        </td>
-      </template>
-    </v-data-table>
-  </panel>
+<v-data-table
+  :headers="headers"
+  :pagination.sync="pagination"
+  :items="albums"
+  hide-actions
+  totalItems="8">
+  <template slot="items" slot-scope="props">
+    <td class="text-xs">
+      <router-link :to="{
+        name: 'album',
+        params: {
+          albumId: props.item.AlbumId,
+        },
+      }">
+      {{ props.item.title }}
+      </router-link>
+    </td>
+  </template>
+</v-data-table>
 </template>
 
 <script>
 import { mapState } from 'vuex';
 import AlbumHistoryService from '@/services/AlbumHistory';
-import Panel from '@/components/Panel.vue';
 
 export default {
-  components: {
-    Panel,
-  },
   data() {
     return {
       headers: [
         {
-          text: 'Title',
+          text: 'Recently Viewed',
           value: 'title',
-        },
-        {
-          text: 'Artist',
-          value: 'artist',
         },
       ],
       pagination: {
