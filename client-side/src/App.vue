@@ -2,12 +2,7 @@
 <v-app>
   <t-header />
   <v-content>
-    <transition
-      name="fade"
-      mode="out-in"
-      @beforeLeave="beforeLeave"
-      @enter="enter"
-      @afterEnter="afterEnter">
+    <transition name="fade" mode="out-in">
       <router-view />
     </transition>
   </v-content>
@@ -38,6 +33,6 @@ export default {
 
 .fade-enter,
 .fade-leave-active {
-  opacity: 0
+  opacity: 0;
 }
 </style>
