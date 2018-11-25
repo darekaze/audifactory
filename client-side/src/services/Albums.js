@@ -1,8 +1,8 @@
 import Api from './_api';
 
 export default {
-  index(search) {
-    return Api().get('albums', { params: { search } });
+  index(search, limit = 10) {
+    return Api().get('albums', { params: { search, limit } });
   },
   show(albumId) {
     return Api().get(`albums/${albumId}`);

@@ -1,11 +1,6 @@
 <template>
 <v-container fluid>
   <v-layout justify-center>
-    <v-flex xs10>
-      <albums-search-bar />
-    </v-flex>
-  </v-layout>
-  <v-layout justify-center>
     <v-flex xs3 v-if="isUserLoggedIn">
       <viewed-history-list class="mr-2 mt-2" />
     </v-flex>
@@ -13,7 +8,8 @@
       xs10: !isUserLoggedIn,
       xs7: isUserLoggedIn
     }">
-      <albums-list class="mt-2"/>
+      <albums-search-bar />
+      <albums-list />
     </v-flex>
   </v-layout>
 </v-container>

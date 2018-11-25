@@ -4,7 +4,7 @@
   :pagination.sync="pagination"
   :items="albums"
   hide-actions
-  totalItems="8">
+  :total-items="8">
   <template slot="items" slot-scope="props">
     <td class="text-xs">
       <router-link :to="{

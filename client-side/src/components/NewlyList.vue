@@ -1,18 +1,19 @@
 <template>
 <v-container fluid grid-list-md>
   <v-layout justify-center>
-    <v-flex xs12>
+    <v-flex xs10>
       <v-data-iterator
         :items="albums"
-        :rows-per-page-items="rowsPerPageItems"
         :pagination.sync="pagination"
+        hide-actions
         content-tag="v-layout"
         row wrap justify-center>
+        <h2 slot="header" class="ml-4 pb-3">New Arrival</h2>
         <v-card
           slot="item"
           slot-scope="props"
-          width="330px"
-          class="ml-1 mr-1 mb-2"
+          width="280px"
+          class="ml-2 mr-2 mb-2"
           :to="{
             name: 'album',
             params: {
@@ -21,19 +22,13 @@
           }">
           <v-img
             :src="props.item.imageUrl"
-            height="300px">
+            height="260px">
           </v-img>
           <v-card-title primary-title>
             <div>
               <div class="title">{{ props.item.title }}</div>
               <div class="subheading">{{ props.item.artist }}</div>
-              <div class="subheading blue--text">{{ props.item.genre }}</div>
-              <div class="primary--text">
-                {{getPrice(props.item.price)}} //
-                <span class="success--text">
-                  Availability: {{props.item.stocks}}
-                </span>
-              </div>
+              <span class="primary--text">{{getPrice(props.item.price)}}</span>
             </div>
           </v-card-title>
         </v-card>
@@ -50,12 +45,11 @@ import currency from '@/filters/currency';
 export default {
   data() {
     return {
-      albums: [],
-      rowsPerPageItems: [6, 12],
       pagination: {
-        rowsPerPage: 6,
+        rowsPerPage: 10,
+        totalItems: 10,
       },
-      limit: 36,
+      albums: [],
     };
   },
   methods: {
@@ -63,13 +57,8 @@ export default {
       return currency.format(price / 100);
     },
   },
-  watch: {
-    '$route.query.search': {
-      immediate: true,
-      async handler(value) {
-        this.albums = (await AlbumsService.index(value, this.limit)).data;
-      },
-    },
+  async mounted() {
+    this.albums = (await AlbumsService.index()).data;
   },
 };
 </script>
