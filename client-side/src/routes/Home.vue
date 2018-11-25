@@ -2,7 +2,7 @@
   <div id="home">
     <v-parallax
       dark
-      :src="require('@/assets/section.jpg')"
+      :src="require('@/assets/home.jpg')"
       height="380">
       <v-layout
         align-center

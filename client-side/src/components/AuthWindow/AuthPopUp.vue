@@ -1,7 +1,7 @@
 <template>
 <v-layout align-center>
   <v-dialog v-model="dialog" max-width="460px">
-    <v-btn flat slot="activator" dark>Login / Sign up</v-btn>
+    <v-btn round flat slot="activator" dark>Login / Sign up</v-btn>
     <v-tabs
       color="cyan"
       slider-color="yellow"
