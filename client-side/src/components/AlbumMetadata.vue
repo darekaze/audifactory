@@ -6,14 +6,13 @@
   <div class="a-artist">
     {{album.artist}}
   </div>
-  <div class="a-genre">
+  <div class="a-sub blue--text">
     {{album.genre}}
   </div>
-  <div class="a-genre">
+  <div class="a-sub">
     {{getPrice}}
   </div>
-  <div>
-    Favorites: WiP //
+  <div class="success--text">
     Avaliability: {{album.stocks}}
   </div>
 
@@ -115,7 +114,7 @@ export default {
 .a-artist {
   font-size: 24px;
 }
-.a-genre {
+.a-sub {
   font-size: 18px;
 }
 </style>
