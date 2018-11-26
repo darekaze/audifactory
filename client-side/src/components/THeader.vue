@@ -19,7 +19,7 @@
     <v-btn flat icon to="/loves">
       <v-icon>favorite</v-icon>
     </v-btn>
-    <v-btn flat icon to="/">
+    <v-btn flat icon to="/userprofile">
       <v-icon>account_circle</v-icon>
     </v-btn>
     <v-btn flat @click="logout">Log Out</v-btn>

@@ -1,5 +1,11 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+<v-container fluid>
+  <v-layout align-center justify-center column>
+    <v-flex>
+      <h1>
+        Made with Love by Group 1
+      </h1>
+    </v-flex>
+  </v-layout>
+</v-container>
 </template>
