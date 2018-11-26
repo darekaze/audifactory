@@ -4,6 +4,7 @@ const LoveController = require('./controllers/LoveController');
 const UserProfileController = require('./controllers/UserProfileController');
 const ViewHistoryController = require('./controllers/ViewHistoryController');
 const CartController = require('./controllers/CartController');
+const PurchaseController = require('./controllers/PurchaseController');
 
 const AuthControllerRule = require('./rules/AuthControllerRule');
 const isAuthenticated = require('./rules/isAuth');
@@ -58,4 +59,8 @@ module.exports = (app) => {
   app.delete('/cart/:itemId',
     isAuthenticated,
     CartController.delete);
+
+  app.post('/purchase',
+    isAuthenticated,
+    PurchaseController.post);
 };

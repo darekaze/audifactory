@@ -40,6 +40,14 @@
         required
       ></v-text-field>
       <v-text-field
+        v-model="address"
+        prepend-icon="home"
+        type="text"
+        label="Address"
+        :rules="addressRules"
+        required
+      ></v-text-field>
+      <v-text-field
         v-model="password"
         prepend-icon="lock"
         type="password"
@@ -87,6 +95,10 @@ export default {
       phoneRules: [
         v => !!v || 'Phone number is required',
       ],
+      address: '',
+      addressRules: [
+        v => !!v || 'Address is required',
+      ],
       password: '',
       passwordRules: [
         v => !!v || 'Password is required',
@@ -112,6 +124,7 @@ export default {
           email: this.email,
           phonenumber: this.phonenumber,
           password: this.password,
+          address: this.address,
         }, this.recaptchaResponse);
         this.$store.dispatch('setToken', response.data.token);
         this.$store.dispatch('setUser', response.data.user);

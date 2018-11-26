@@ -38,6 +38,42 @@
     </template>
   </v-data-table>
   <h3 class="ml-3 mt-2">Total: {{ calcTotalPrice }}</h3>
+  <template>
+  <v-layout justify-left mt-4 mb-4>
+    <div class="error" v-html="error" />
+    <v-flex xs12 sm10 md8 lg6>
+      <panel title="Credit Card">
+        <v-text-field
+          mask="credit-card"
+          label="Card Number"
+          v-model="cardnumber"
+          prepend-icon="lock"
+          required
+        ></v-text-field>
+        <v-text-field
+          type="date"
+          label="Expiration Date"
+          v-model="expirationdate"
+          prepend-icon="lock"
+          required
+        ></v-text-field>
+        <v-text-field
+          label="CVC/CVV"
+          v-model="cvc"
+          prepend-icon="lock"
+          required
+        ></v-text-field>
+        <v-textarea
+          label="Shipping Address"
+          v-model="user.address"
+          prepend-icon="home"
+        ></v-textarea>
+
+        <v-btn color="primary" @click="purchase">Confirm Purchase</v-btn>
+      </panel>
+    </v-flex>
+  </v-layout>
+  </template>
 </div>
 </template>
 
@@ -45,7 +81,7 @@
 import { mapState } from 'vuex';
 import CartService from '@/services/Carts';
 import currency from '@/filters/currency';
-
+import PurchaseHistory from '@/services/Purchase';
 export default {
   data() {
     return {
@@ -59,9 +95,25 @@ export default {
         descending: true,
       },
       albums: [],
+      error: null,
+
     };
   },
   methods: {
+    async purchase(){
+      try {
+        const response = await PurchaseHistory.purchase({
+          albums: this.albums,
+          user: this.user,
+        });
+        if(response){
+          alert(JSON.stringify(response));
+          this.error = null;
+        }
+      } catch (error) {
+        this.error = error.response.data.error;
+      }
+    },
     getPrice(price) {
       return currency.format(price / 100);
     },
