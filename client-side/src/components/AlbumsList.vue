@@ -14,7 +14,7 @@
           width="330px"
           class="ml-1 mr-1 mb-2"
           :to="{
-            name: 'albums',
+            name: 'album-view',
             params: {
               albumId: props.item.id,
             },

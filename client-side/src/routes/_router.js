@@ -26,7 +26,7 @@ export default new Router({
     },
     {
       path: '/albums/:albumId',
-      name: 'album',
+      name: 'album-view',
       component: () =>
         import(/* webpackChunkName: "albums" */ './ViewAlbum.vue'),
     },

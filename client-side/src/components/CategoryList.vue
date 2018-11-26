@@ -10,7 +10,7 @@
       <router-link
         class=""
         :to="{
-          name: 'albums',
+          name: 'album-view',
           query: {
             search: props.item.title,
           },

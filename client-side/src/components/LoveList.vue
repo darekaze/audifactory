@@ -15,7 +15,7 @@
           <v-btn
             color="primary"
             :to="{
-              name: 'albums',
+              name: 'album-view',
               params: {
                 albumId: props.item.id,
               },
