@@ -1,5 +1,9 @@
 <template>
 <v-container fluid>
+  <v-btn @click="goBack" flat dark round color="pink" >
+    <v-icon>arrow_back_ios</v-icon>
+    Back
+  </v-btn>
   <v-layout justify-center>
     <v-flex xs6 sm5 md4>
       <album-image :url="album.imageUrl"/>
@@ -32,6 +36,11 @@ export default {
       album: {},
       scLink: '',
     };
+  },
+  methods: {
+    goBack() {
+      this.$router.go(-1);
+    },
   },
   computed: {
     ...mapState({
