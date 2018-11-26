@@ -15,7 +15,7 @@ module.exports = {
       ),
     };
 
-    const { error } = Joi.validate(req.body, schema);
+    const { error } = Joi.validate(req.body.credentials, schema);
 
     if (error) {
       switch (error.details[0].context.key) {
