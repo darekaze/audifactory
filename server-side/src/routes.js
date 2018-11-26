@@ -1,6 +1,7 @@
 const AuthController = require('./controllers/AuthController');
 const AlbumController = require('./controllers/AlbumController');
 const LoveController = require('./controllers/LoveController');
+const UserProfileController = require('./controllers/UserProfileController');
 const ViewHistoryController = require('./controllers/ViewHistoryController');
 const CartController = require('./controllers/CartController');
 
@@ -36,6 +37,10 @@ module.exports = (app) => {
   app.delete('/loves/:loveId',
     isAuthenticated,
     LoveController.delete);
+
+  app.put('/userprofile',
+    isAuthenticated,
+    UserProfileController.put);
 
   app.get('/view-history',
     isAuthenticated,

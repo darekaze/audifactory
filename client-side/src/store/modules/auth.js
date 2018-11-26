@@ -12,6 +12,11 @@ const mutations = {
   setUser(st, user) {
     st.user = user;
   },
+  updateUser(st, user) {
+    st.user.name = user.name;
+    st.user.address = user.address;
+    st.user.phonenumber = user.phonenumber;
+  },
 };
 
 const actions = {
@@ -20,6 +25,9 @@ const actions = {
   },
   setUser({ commit }, user) {
     commit('setUser', user);
+  },
+  updateUser({ commit }, user) {
+    commit('updateUser', user);
   },
 };
 

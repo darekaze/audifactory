@@ -29,6 +29,7 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
 import Panel from '@/components/Panel.vue';
 import UserService from '@/services/User';
 
@@ -36,7 +37,6 @@ export default {
   data() {
     return {
       user: {
-        email: null,
         name: null,
         phonenumber: null,
         address: null,
@@ -49,18 +49,29 @@ export default {
   methods: {
     async save() {
       try {
-        const updatedUser = (await UserService.put(this.user)).data;
-        // Update vuex store user data
-        // 后端把密码删了，然后给updatedUser然后给vuex auth.user
+        const { updated } = (await UserService.update(this.user)).data;
+        this.$store.dispatch('updateUser', this.user);
+        if (!updated) throw new Error('Fail to update');
+        alert('Personal information updated!'); // eslint-disable-line no-alert
         this.$router.push('/');
       } catch (err) {
         console.log(err); // eslint-disable-line no-console
       }
     },
   },
+  computed: {
+    ...mapState({
+      isUserLoggedIn: state => state.auth.isUserLoggedIn,
+    }),
+  },
   mounted() {
-    // ↓过滤user，只要name,addr,phone
-    this.user = this.$store.state.auth.user;
+    if (!this.isUserLoggedIn) {
+      this.$router.push('/');
+      return;
+    }
+    this.user.address = this.$store.state.auth.user.address;
+    this.user.name = this.$store.state.auth.user.name;
+    this.user.phonenumber = this.$store.state.auth.user.phonenumber;
   },
 };
 </script>
