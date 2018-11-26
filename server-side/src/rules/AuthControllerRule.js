@@ -11,7 +11,7 @@ module.exports = {
         new RegExp('^[0-9]{8,20}$'),
       ),
       name: Joi.string().regex(
-        new RegExp('^[a-z ,.-]+$'),
+        new RegExp('^[a-zA-Z ,.-]+$'),
       ),
     };
 
