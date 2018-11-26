@@ -3,6 +3,7 @@
     "name": "Tester",
     "email": "testing@gmail.com",
     "phonenumber":"12345678",
+    "address": "PolyU hall Room 1234",
     "password": "12345678"
   }
 ]
