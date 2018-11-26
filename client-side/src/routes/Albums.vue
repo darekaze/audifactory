@@ -5,10 +5,7 @@
       <category-list/>
       <viewed-history-list v-if="isUserLoggedIn" class="mr-2 mt-2" />
     </v-flex>
-    <v-flex :class="{
-      xs10: !isUserLoggedIn,
-      xs7: isUserLoggedIn
-    }">
+    <v-flex xs7>
       <albums-search-bar />
       <albums-list />
     </v-flex>
