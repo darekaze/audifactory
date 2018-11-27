@@ -55,6 +55,12 @@ export default new Router({
         import(/* webpackChunkName: "userprofile" */ './UserProfile.vue'),
     },
     {
+      path: '/purchase-history',
+      name: 'purchase-history',
+      component: () =>
+        import(/* webpackChunkName: "purchase-history" */ './ViewPurchaseHistory.vue'),
+    },
+    {
       path: '/about',
       name: 'about',
       component: () =>

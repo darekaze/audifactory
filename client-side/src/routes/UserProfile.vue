@@ -1,6 +1,6 @@
 <template>
 <v-layout justify-center mt-4 mb-4>
-  <v-flex xs12 sm10 md8 lg6>
+  <v-flex xs12 sm10 md8 lg6 v-if="isUserLoggedIn">
     <panel title="User profile">
       <v-text-field
         label="Name"
@@ -43,6 +43,9 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
+  </v-flex>
+  <v-flex xs10 v-else>
+    <h3>Please Login to use this function</h3>
   </v-flex>
 </v-layout>
 </template>

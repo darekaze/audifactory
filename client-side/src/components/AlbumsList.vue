@@ -28,12 +28,7 @@
               <div class="title">{{ props.item.title }}</div>
               <div class="subheading">{{ props.item.artist }}</div>
               <div class="subheading blue--text">{{ props.item.genre }}</div>
-              <div class="primary--text">
-                {{getPrice(props.item.price)}} //
-                <span class="success--text">
-                  Availability: {{props.item.stocks}}
-                </span>
-              </div>
+              <div class="primary--text">{{ getPrice(props.item.price) }}</div>
             </div>
           </v-card-title>
         </v-card>

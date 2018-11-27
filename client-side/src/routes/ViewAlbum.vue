@@ -30,14 +30,14 @@
         <v-btn
           color="green darken-1"
           flat="flat"
-          @click="goBack">
-          Back to Explore
+          @click="goToCheckout">
+          Go To Checkout
         </v-btn>
         <v-btn
           color="green darken-1"
           flat="flat"
           @click="dialog = false">
-          Continue
+          Close
         </v-btn>
       </v-card-actions>
     </v-card>
@@ -66,6 +66,10 @@ export default {
     goBack() {
       this.dialog = false;
       this.$router.go(-1);
+    },
+    goToCheckout() {
+      this.dialog = false;
+      this.$router.push('/cart');
     },
   },
   computed: {
