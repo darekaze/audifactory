@@ -82,6 +82,7 @@ import { mapState } from 'vuex';
 import CartService from '@/services/Carts';
 import currency from '@/filters/currency';
 import PurchaseHistory from '@/services/Purchase';
+
 export default {
   data() {
     return {
@@ -100,14 +101,14 @@ export default {
     };
   },
   methods: {
-    async purchase(){
+    async purchase() {
       try {
         const response = await PurchaseHistory.purchase({
           albums: this.albums,
           user: this.user,
         });
-        if(response){
-          alert(JSON.stringify(response));
+        if (response) {
+          alert(JSON.stringify(response)); // eslint-disable-line no-alert
           this.error = null;
         }
       } catch (error) {
