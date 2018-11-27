@@ -60,6 +60,9 @@ module.exports = (app) => {
     isAuthenticated,
     CartController.delete);
 
+  app.get('/purchase',
+    isAuthenticated,
+    PurchaseController.index);
   app.post('/purchase',
     isAuthenticated,
     PurchaseController.post);

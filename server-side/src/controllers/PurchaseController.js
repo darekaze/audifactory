@@ -1,8 +1,34 @@
+const _ = require('lodash');
 const {
-  PurchaseHistory, Cart,
+  PurchaseHistory,
+  Cart,
+  Album,
 } = require('../models');
 
 module.exports = {
+  async index(req, res) {
+    try {
+      const userId = req.user.id;
+      const histories = await PurchaseHistory.findAll({
+        where: { userId },
+        include: [{ model: Album }],
+        group: ['AlbumId'],
+        order: [
+          ['createdAt', 'DESC'],
+        ],
+      }).map(history => history.toJSON())
+        .map(history => _.extend(
+          {},
+          history.Album,
+          history,
+        ));
+      res.send(_.uniqBy(histories, history => history.AlbumId));
+    } catch (err) {
+      res.status(500).send({
+        error: 'Error in fetching purchase histories',
+      });
+    }
+  },
   async post(req, res) {
     let i;
     try {

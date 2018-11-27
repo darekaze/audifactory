@@ -98,7 +98,7 @@ export default {
         this.item = (await CartService.post({
           albumId: this.album.id,
         })).data;
-        console.log('Added to cart'); // eslint-disable-line no-console
+        this.$emit('done');
       } catch (err) {
         console.log(err); // eslint-disable-line no-console
       }
