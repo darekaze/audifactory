@@ -13,6 +13,7 @@ module.exports = {
       name: Joi.string().regex(
         new RegExp('^[a-zA-Z ,.-]+$'),
       ),
+      address: Joi.string(),
     };
 
     const { error } = Joi.validate(req.body.credentials, schema);
