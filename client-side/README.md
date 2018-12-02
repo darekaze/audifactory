@@ -1,4 +1,4 @@
-# alms-client
+# Audifactory frontend
 
 ## Project setup
 ```
