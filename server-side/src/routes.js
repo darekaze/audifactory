@@ -11,9 +11,11 @@ const isAuthenticated = require('./rules/isAuth');
 
 module.exports = (app) => {
   app.post('/register',
+    AuthControllerRule.requirement,
     AuthControllerRule.register,
     AuthController.register);
   app.post('/login',
+    AuthControllerRule.requirement,
     AuthController.login);
   app.post('/forgotpassword',
     AuthControllerRule.forgotpassword,

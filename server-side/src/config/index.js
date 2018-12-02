@@ -7,7 +7,6 @@ module.exports = {
     user: process.env.DB_USER || 'alms',
     password: process.env.DB_PASS || 'alms',
     options: {
-      /* Currently using sqlite as temp database */
       dialect: process.env.DIALECT || 'sqlite',
       host: process.env.HOST || 'localhost',
       operatorsAliases: false,

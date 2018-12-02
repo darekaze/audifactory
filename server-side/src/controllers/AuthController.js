@@ -17,7 +17,7 @@ module.exports = {
           error: 'Please enter the reCAPTCHA!',
         });
       }
-      const user = await User.create(req.body.credentials);
+      const user = await User.create(req.body.credential);
       const userJson = user.toJSON();
       delete userJson.password;
       res.send({
@@ -37,7 +37,7 @@ module.exports = {
           error: 'Please enter the reCAPTCHA!',
         });
       }
-      const { email, password } = req.body.credentials;
+      const { email, password } = req.body.credential;
       const user = await User.findOne({
         where: {
           email,

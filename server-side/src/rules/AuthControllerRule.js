@@ -1,22 +1,28 @@
 const Joi = require('joi');
 
 module.exports = {
-  register(req, res, next) {
-    const schema = {
-      email: Joi.string().email(),
-      password: Joi.string().regex(
-        new RegExp('^[a-zA-Z0-9]{8,32}$'),
-      ),
-      phonenumber: Joi.string().regex(
-        new RegExp('^[0-9]{8,20}$'),
-      ),
-      name: Joi.string().regex(
-        new RegExp('^[a-zA-Z ,.-]+$'),
-      ),
-      address: Joi.string(),
-    };
+  requirement(req, res, next) {
+    if (!req.body.recaptcha) {
+      res.status(403).send({
+        error: 'Please enter the reCAPTCHA!',
+      });
+    } else if (!req.body.credential) {
+      res.status(403).send({
+        error: 'Credential cannot be empty!',
+      });
+    } else next();
+  },
 
-    const { error } = Joi.validate(req.body.credentials, schema);
+  register(req, res, next) {
+    const schema = Joi.object().keys({
+      email: Joi.string().email().required(),
+      password: Joi.string().regex(/^[a-zA-Z0-9]{8,32}$/),
+      phonenumber: Joi.string().regex(/^[0-9]{8,20}$/),
+      name: Joi.string().alphanum(),
+      address: Joi.string(),
+    });
+
+    const { error } = Joi.validate(req.body.credential, schema);
 
     if (error) {
       switch (error.details[0].context.key) {
@@ -46,19 +52,14 @@ module.exports = {
           });
           break;
       }
-    }
-    if (!error) next();
+    } else next();
   },
   forgotpassword(req, res, next) {
-    const schema = {
-      email: Joi.string().email(),
-      phonenumber: Joi.string().regex(
-        new RegExp('^[0-9]{8,20}$'),
-      ),
-      password: Joi.string().regex(
-        new RegExp('^[a-zA-Z0-9]{8,32}$'),
-      ),
-    };
+    const schema = Joi.object().keys({
+      email: Joi.string().email().required(),
+      password: Joi.string().regex(/^[a-zA-Z0-9]{8,32}$/),
+      phonenumber: Joi.string().regex(/^[0-9]{8,20}$/),
+    });
 
     const { error } = Joi.validate(req.body, schema);
 

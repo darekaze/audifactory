@@ -10,7 +10,7 @@ const app = express();
 
 app.use(morgan('combined'));
 app.use(bodyParser.json());
-app.use(cors()); // dev only
+app.use(cors());
 
 require('./config/passport');
 
