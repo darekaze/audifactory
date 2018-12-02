@@ -25,9 +25,13 @@
       <v-icon>favorite</v-icon>
       Loved
     </v-btn>
-    <v-btn flat dark round color="green" @click="addToCart">
+    <v-btn flat dark round color="green" v-if="isAvailable" @click="addToCart">
       <v-icon>add_shopping_cart</v-icon>
       Add to cart
+    </v-btn>
+    <v-btn flat dark round color="grey" v-else>
+      <v-icon>add_shopping_cart</v-icon>
+      Out of Stock!
     </v-btn>
   </div>
   <div v-else>
@@ -58,6 +62,9 @@ export default {
     }),
     getPrice() {
       return currency.format(this.album.price / 100);
+    },
+    isAvailable() {
+      return this.album.stocks > 0;
     },
   },
   watch: {
@@ -98,7 +105,7 @@ export default {
         this.item = (await CartService.post({
           albumId: this.album.id,
         })).data;
-        console.log('Added to cart'); // eslint-disable-line no-console
+        this.$emit('done');
       } catch (err) {
         console.log(err); // eslint-disable-line no-console
       }

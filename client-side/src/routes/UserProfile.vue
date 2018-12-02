@@ -1,6 +1,6 @@
 <template>
 <v-layout justify-center mt-4 mb-4>
-  <v-flex xs12 sm10 md8 lg6>
+  <v-flex xs12 sm10 md8 lg6 v-if="isUserLoggedIn">
     <panel title="User profile">
       <v-text-field
         label="Name"
@@ -24,6 +24,28 @@
 
       <v-btn color="primary" @click="save">Update</v-btn>
     </panel>
+
+    <v-dialog
+      v-model="dialog"
+      max-width="290">
+      <v-card>
+        <v-card-text>
+          Personal information updated!
+        </v-card-text>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn
+            color="green darken-1"
+            flat="flat"
+            @click="dialog = false">
+            Close
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+  </v-flex>
+  <v-flex xs10 v-else>
+    <h3>Please Login to use this function</h3>
   </v-flex>
 </v-layout>
 </template>
@@ -41,6 +63,7 @@ export default {
         phonenumber: null,
         address: null,
       },
+      dialog: false,
     };
   },
   components: {
@@ -52,8 +75,7 @@ export default {
         const { updated } = (await UserService.update(this.user)).data;
         this.$store.dispatch('updateUser', this.user);
         if (!updated) throw new Error('Fail to update');
-        alert('Personal information updated!'); // eslint-disable-line no-alert
-        this.$router.push('/');
+        this.dialog = true;
       } catch (err) {
         console.log(err); // eslint-disable-line no-console
       }

@@ -19,6 +19,7 @@ module.exports = {
       }
       const user = await User.create(req.body.credentials);
       const userJson = user.toJSON();
+      delete userJson.password;
       res.send({
         user: userJson,
         token: jwtSignUser(userJson),
@@ -54,6 +55,7 @@ module.exports = {
         });
       }
       const userJson = user.toJSON();
+      delete userJson.password;
       res.send({
         user: userJson,
         token: jwtSignUser(userJson),
@@ -86,9 +88,8 @@ module.exports = {
       } else {
         return User.findOne({
           where: { email },
-        }).then(result => result
-          .update({ password })
-          .then(() => {
+        })
+          .then(result => result.update({ password }).then(() => {
             res.send({ updated: true });
           }));
       }
