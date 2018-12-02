@@ -32,6 +32,12 @@
             </div>
           </v-card-title>
         </v-card>
+        <div slot="no-data">
+          <v-progress-circular
+            indeterminate
+            color="pink">
+          </v-progress-circular>
+        </div>
       </v-data-iterator>
     </v-flex>
   </v-layout>
