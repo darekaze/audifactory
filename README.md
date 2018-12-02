@@ -1,9 +1,11 @@
-# A Little Music Station (alms)
+# Audifactory
 
-## A website that sells various albums
+A website that sells various albums
 
-WIP...
+## Info
 
-If anyone wants to push, please open a new branch and do pull request.
+To be added
 
-Thanks
+### Notes
+
+If anyone wants to push, please open a new branch and do pull request. Thanks

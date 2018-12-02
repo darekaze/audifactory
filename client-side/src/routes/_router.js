@@ -28,7 +28,7 @@ export default new Router({
       path: '/albums/:albumId',
       name: 'album-view',
       component: () =>
-        import(/* webpackChunkName: "albums" */ './ViewAlbum.vue'),
+        import(/* webpackChunkName: "single-album" */ './ViewAlbum.vue'),
     },
     {
       path: '/albums/:albumId/edit', /* should protect this route */
@@ -70,7 +70,7 @@ export default new Router({
       path: '/forgotpassword',
       name: 'forgotpassword',
       component: () =>
-        import(/* webpackChunkName: "auth" */ './ForgotPassword.vue'),
+        import(/* webpackChunkName: "forget" */ './ForgotPassword.vue'),
     },
     {
       path: '*',
