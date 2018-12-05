@@ -2,13 +2,30 @@
 
 A elegant website that sells various albums
 
-## Technology Stack
+## Instruction
 
-To be added
+Ensure you have Node.js 10.0 above and npm installed on your computer
 
-## Roadmap of future development
+Open two command lines / Terminals. 
 
-WiP
+For the first one, change directory to server-side folder and run the following commands
+
+```bash
+npm install
+npm run seed
+npm run start
+```
+
+For the second one, change directory to client-side folder and run the following commands
+
+```bash
+npm install
+npm run serve
+```
+
+The front-end server will be running on `localhost:8080`
+
+The API Server will be running on `localhost:8081`
 
 ## Demo
 
