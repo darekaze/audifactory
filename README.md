@@ -1,6 +1,8 @@
 # Audifactory
 
-A elegant website that sells various albums
+A elegant website that sells various albums. 
+
+**To be revamp after the release of vue 3.0 and vuetify 2.0 (2019 Q3)**
 
 ## Instruction
 
